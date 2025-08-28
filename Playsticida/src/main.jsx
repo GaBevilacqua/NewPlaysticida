@@ -5,6 +5,7 @@ import './index.css'
 import Home from '../pages/Home/index.jsx'
 import Sobre from '../pages/Sobre';
 import Contato from '../pages/Contato';
+import "./i18n";
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
