@@ -60,33 +60,7 @@ function Footer() {
     }
   ];
 
-  // Links sociais
-  const socialLinks = [
-    {
-      name: "GitHub",
-      href: "#",
-      icon: <Github size={20} />,
-      color: "hover:text-gray-400"
-    },
-    {
-      name: "Instagram",
-      href: "#",
-      icon: <Instagram size={20} />,
-      color: "hover:text-pink-400"
-    },
-    {
-      name: "Facebook",
-      href: "#",
-      icon: <Facebook size={20} />,
-      color: "hover:text-blue-400"
-    },
-    {
-      name: "YouTube",
-      href: "#",
-      icon: <Youtube size={20} />,
-      color: "hover:text-red-400"
-    }
-  ];
+  
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-300 mt-16">
@@ -99,22 +73,10 @@ function Footer() {
             
           />
             <p className="mb-4 text-sm">
+              <br></br>
               Transformando o aprendizado de química em uma experiência divertida e envolvente para todos.
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`p-2 bg-gray-700 rounded-full transition-all duration-300 ${social.color} hover:bg-gray-600`}
-                  aria-label={social.name}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
+            
           </div>
 
           {/* Pages Links */}
@@ -171,40 +133,10 @@ function Footer() {
               ))}
             </ul>
             
-            <h4 className="font-bold text-white mt-6 mb-4 text-lg">
-              Nosso Horário
-            </h4>
-            <p className="text-sm">
-              Segunda a Sexta: 9h - 18h
-            </p>
-            <p className="text-sm">
-              Sábado: 10h - 14h
-            </p>
+           
           </div>
 
-          {/* Newsletter */}
-          <div>
-            <h4 className="font-bold text-white mb-4 text-lg">
-              Fique por Dentro
-            </h4>
-            <p className="text-sm mb-4">
-              Inscreva-se para receber atualizações sobre novos recursos e conteúdos.
-            </p>
-            <form className="space-y-2">
-              <input
-                type="email"
-                placeholder="Seu e-mail"
-                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent text-white placeholder-gray-400 text-sm"
-                required
-              />
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-green-500 to-teal-500 text-white py-2 px-4 rounded-lg font-medium hover:from-green-600 hover:to-teal-600 transition-all duration-300 text-sm"
-              >
-                Inscrever-se
-              </button>
-            </form>
-          </div>
+          
         </div>
 
         {/* Divider */}
@@ -213,11 +145,7 @@ function Footer() {
             <span>&copy; {currentYear} Playsticida. Todos os direitos reservados.</span>
           </div>
           
-          <div className="flex items-center">
-            <span className="text-sm mr-2">Feito com</span>
-            <Heart size={16} className="text-red-400 mx-1" />
-            <span className="text-sm ml-1">para educadores e estudantes</span>
-          </div>
+
         </div>
       </div>
     </footer>

@@ -11,7 +11,6 @@ function Home() {
     { code: "en", flag: "🇬🇧", name: "English" },
     { code: "es", flag: "🇪🇸", name: "Español" },
     { code: "it", flag: "🇮🇹", name: "Italiano" },
-    { code: "it", flag: "🇫🇷", name: "Francês" },
   ];
 
   // Dados dos recursos educacionais
@@ -45,28 +44,25 @@ function Home() {
   // Dados de depoimentos
   const testimonials = [
     {
-      name: "Carlos Silva",
-      role: "Professor de Química",
-      text: "O Playsticida revolucionou minhas aulas. Os alunos estão muito mais engajados e o aprendizado se tornou divertido!",
-      avatar: "👨‍🏫"
+      name: "Flippity",
+      text: "Plataforma onde o jogo está hospedado, sendo qualquer problema com o plataforma não é problema diretamente do jog em si.",
+      avatar: "⚙️"
     },
     {
-      name: "Marina Oliveira",
-      role: "Estudante",
-      text: "Nunca imaginei que aprender química pudesse ser tão divertido. O jogo me ajudou a entender conceitos complexos com facilidade!",
-      avatar: "👩‍🎓"
+      name: "Melhor para PCs",
+      text: "O Jogo pode ser jogado em qualquer plataforma, mas pode ser melhor explorado em Computadores ou tablets grandes.",
+      avatar: "🖥️"
     },
     {
-      name: "Dr. Roberto Mendes",
-      role: "Pesquisador",
-      text: "Uma ferramenta educacional excepcional que combina perfeitamente diversão e aprendizado de qualidade.",
-      avatar: "👨‍🔬"
+      name: "Dúvidas e sugestões",
+      text: "Qualquer dúvida ou sugestão pode ser feita mandando e-mail para nós.",
+      avatar: "🔍"
     }
   ];
 
   // Dados de estatísticas
   const stats = [
-    { value: "CC BY_NC_SA 4.0", label: "Licença" },
+    { value: "Copyright", label: "Licença CC BY_NC_SA 4.0" },
     { value: "Unesp", label: "Universidade" },
     { value: "2017", label: "Ano de lançamento" },
     { value: "2025", label: "Última atualização" }
@@ -91,7 +87,7 @@ function Home() {
           </h1>
 
           <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            Descubra o mundo da química de forma divertida e interativa com o Playsticida
+           {t("welcome2")}
           </p>
           
           <div className="mt-8 flex justify-center">
@@ -107,10 +103,10 @@ function Home() {
       {/* Idioma Selection */}
       <section className="py-12 bg-gray-50 shadow-inner">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center mb-2 text-gray-700">Selecione seu idioma</h2>
-          <p className="text-center text-gray-600 mb-8">O Playsticida está disponível em múltiplos idiomas</p>
+          <h2 className="text-2xl font-bold text-center mb-2 text-gray-700">{t("language")}</h2>
+          <p className="text-center text-gray-600 mb-8">{t("language2")}</p>
           
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {languages.map((lang) => (
               <button
                 key={lang.code}
@@ -135,9 +131,9 @@ function Home() {
       <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800">O que é o Playsticida?</h2>
+            <h2 className="text-3xl font-bold text-gray-800">{t("question")}</h2>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              Uma plataforma educacional inovadora que transforma o aprendizado de química em uma experiência divertida e envolvente
+              {t("answer")}
             </p>
           </div>
           
@@ -198,7 +194,7 @@ function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800">Gamificação é o caminho</h2>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              Conheça as ferramentas e recursos que tornam o aprendizado de química mais eficiente e divertido
+              Conheça o nosso tipo de jogo de maneira rápida
             </p>
           </div>
           
@@ -208,12 +204,7 @@ function Home() {
                 <div className="text-4xl mb-4">{resource.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{resource.title}</h3>
                 <p className="text-gray-600 mb-4">{resource.description}</p>
-                <a href={resource.link} className="text-green-600 font-medium hover:text-green-700 inline-flex items-center">
-                  Saiba mais
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                  </svg>
-                </a>
+                
               </div>
             ))}
           </div>
@@ -226,8 +217,8 @@ function Home() {
       <section className="py-16 bg-gradient-to-r from-green-400 to-teal-500 text-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold">O que estão dizendo</h2>
-            <p className="mt-4 text-lg opacity-90">Depoimentos de educadores e estudantes que utilizam nossa plataforma</p>
+            <h2 className="text-3xl font-bold">Informações Importantes</h2>
+            <p className="mt-4 text-lg opacity-90">Em relação ao jogo</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -237,7 +228,7 @@ function Home() {
                   <span className="text-3xl mr-3">{testimonial.avatar}</span>
                   <div>
                     <h4 className="font-semibold">{testimonial.name}</h4>
-                    <p className="text-sm opacity-80">{testimonial.role}</p>
+
                   </div>
                 </div>
                 <p className="italic">"{testimonial.text}"</p>
