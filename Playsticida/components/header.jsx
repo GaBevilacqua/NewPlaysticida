@@ -25,12 +25,7 @@ function Header() {
 
   // Links de navegação
   const navLinks = [
-    {
-      name: "PDF",
-      href: "https://i.ibb.co/4fPgYws/Regras.png",
-      icon: <Download size={18} className="mr-1" />,
-      external: true
-    },
+
     {
       name: "Sobre",
       to: "/sobre",

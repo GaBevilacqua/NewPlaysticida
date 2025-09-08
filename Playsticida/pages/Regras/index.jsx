@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 
 
-function Sobre() {
+function Regras() {
     const { t, i18n } = useTranslation();
 
   // Dados dos idiomas disponíveis
@@ -29,7 +29,7 @@ function Sobre() {
         
         <div className="relative max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600 animate-gradient">
-            {t("about")}
+            {t("rules")}
           </h1>
           
         </div>
@@ -67,4 +67,4 @@ function Sobre() {
 }
 
 
-export default Sobre;
+export default Regras;

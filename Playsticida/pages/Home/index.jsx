@@ -73,7 +73,7 @@ function Home() {
       <Header />
 
       {/* Espaço para o header fixo */}
-      <div className="h-20 md:h-24"></div>
+      <div className="h-20 md:h-17"></div>
 
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 overflow-hidden">

@@ -6,6 +6,7 @@ import Home from '../pages/Home/index.jsx'
 import Sobre from '../pages/Sobre';
 import Contato from '../pages/Contato';
 import "./i18n";
+import Regras from '../pages/Regras/index.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -13,6 +14,8 @@ createRoot(document.getElementById('root')).render(
       <Route path="/" element={<Home />} />
       <Route path="/sobre" element={<Sobre />} />
       <Route path="/contato" element={<Contato />} />
+      <Route path="/regras" element={<Regras />} />
+      
     </Routes>
   </BrowserRouter>
 );

@@ -30,20 +30,11 @@ i18n.use(initReactI18next).init({
         language: "Seleziona la tua lingua",
         language2: "Playsticida è disponibile in più lingue",
         question: "Cos'è Playsticida?",
-        answer: "Una piattaforma educativa innovativa che trasforma l'apprendimento della chimica in un'esperienza divertente e coinvolgente"
+        answer: "Una piattaforma educativa innovativa che trasforma l'apprendimento della chimica in un'esperienza divertente e coinvolgente",
+        about:"fjoerifjiorjfiorejfeiorjfeio"
       }
     },
 
-    fr: {
-      translation: {
-        welcome: "Bienvenue sur Playsticida !",
-        welcome2: "Découvrez le monde de la chimie de manière ludique et interactive",
-        language: "Sélectionnez votre langue",
-        language2: "Playsticida est disponible en plusieurs langues",
-        question: "Qu'est-ce que Playsticida ?",
-        answer: "Une plateforme éducative innovante qui transforme l'apprentissage de la chimie en une expérience amusante et captivante"
-      }
-    },
     pt: {
       translation: {
         welcome: "Bem-vindo ao Playsticida!",
@@ -52,6 +43,9 @@ i18n.use(initReactI18next).init({
         language2: "Playsticida está disponível em múltiplos idomas",
         question: "O que é o Playsticida",
         answer: "Uma plataforma educacional inovadora que transforma o aprendizado de química em uma experiência divertida e envolvente",
+        contact: "Contatos",
+        rules: "Regras",
+        about: "Sobre",
       }
     }
   },
