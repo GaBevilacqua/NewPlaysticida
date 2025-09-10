@@ -43,8 +43,8 @@ i18n.use(initReactI18next).init({
         language2: "Playsticida está disponível em múltiplos idomas",
         question: "O que é o Playsticida",
         answer: "Uma plataforma educacional inovadora que transforma o aprendizado de química em uma experiência divertida e envolvente",
-        contact: "Contatos",
-        rules: "Regras",
+        contact: "Contato",
+        rules: "Regra",
         about: "Sobre",
       }
     }
