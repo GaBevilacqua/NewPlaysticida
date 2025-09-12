@@ -1,9 +1,20 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { AlignCenter } from "lucide-react";
 
 function Home() {
   const { t, i18n } = useTranslation();
+
+   useEffect(() => {
+      AOS.init({
+        duration: 1200,
+        once: true,
+      });
+    }, []);
 
   // Dados dos idiomas disponíveis
   const languages = [
@@ -101,7 +112,7 @@ function Home() {
       </section>
 
       {/* Idioma Selection */}
-      <section className="py-12 bg-gray-50 shadow-inner">
+      <section className="py-12 bg-gray-50 shadow-inner" data-aos="fade-up">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-2 text-gray-700">{t("language")}</h2>
           <p className="text-center text-gray-600 mb-8">{t("language2")}</p>
@@ -128,7 +139,7 @@ function Home() {
       
 
       {/* Sobre o Playsticida */}
-      <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
+      <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50" data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800">{t("question")}</h2>
@@ -189,7 +200,7 @@ function Home() {
       </section>
 
       {/* Recursos Educacionais */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white" data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800">Gamificação é o caminho</h2>
@@ -214,7 +225,7 @@ function Home() {
       
 
       {/* Depoimentos */}
-      <section className="py-16 bg-gradient-to-r from-green-400 to-teal-500 text-white">
+      <section className="py-16 bg-gradient-to-r from-green-400 to-teal-500 text-white" data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Informações Importantes</h2>
@@ -239,7 +250,7 @@ function Home() {
       </section>
 
       {/* Jogue agora Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white" data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           <div className="flex justify-center">
             <div className="relative">
@@ -277,7 +288,7 @@ function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50" data-aos="flip-up">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800">Perguntas Frequentes</h2>
@@ -309,7 +320,7 @@ function Home() {
       </section>
 
       {/* Estatísticas */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-white" data-aos="fade-right">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {stats.map((stat, index) => (
