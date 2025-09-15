@@ -108,8 +108,8 @@ function Contato() {
 
 
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Localização</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4">Localização</h2>
+            <p className="text-white mb-4">
               R. Roberto Símonsen, 305 - Centro Educacional, Pres. Prudente - SP, 19060-900
             </p>
             
