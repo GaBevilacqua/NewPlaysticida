@@ -5,15 +5,16 @@ import { useTranslation } from "react-i18next";
 
 
 function Sobre() {
-    const { t, i18n } = useTranslation();
+    const { t} = useTranslation();
+    const stats = [
+    { value: "Copyright", label: t("stats.copyright") },
+    { value: "Unesp", label: t("stats.university") },
+    { value: "2017", label: t("stats.releaseYear") },
+    { value: "2025", label: t("stats.lastUpdate") }
+  ];
 
   // Dados dos idiomas disponíveis
-  const languages = [
-    { code: "pt", flag: "🇧🇷", name: "Português" },
-    { code: "en", flag: "🇬🇧", name: "English" },
-    { code: "es", flag: "🇪🇸", name: "Español" },
-    { code: "it", flag: "🇮🇹", name: "Italiano" },
-  ];
+  
     return(
             <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800">
       <Header />
@@ -35,30 +36,123 @@ function Sobre() {
         </div>
       </section>
 
-      {/* Idioma Selection */}
-      <section className="py-12 bg-gray-50 shadow-inner">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center mb-2 text-gray-700">{t("language")}</h2>
-          <p className="text-center text-gray-600 mb-8">{t("language2")}</p>
-          
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {languages.map((lang) => (
-              <button
-                key={lang.code}
-                onClick={() => i18n.changeLanguage(lang.code)}
-                className={`flex flex-col items-center justify-center p-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg ${
-                  i18n.language === lang.code 
-                    ? "bg-green-100 border-2 border-green-500 shadow-md" 
-                    : "bg-white border border-gray-200 hover:bg-green-50"
-                }`}
-              >
-                <span className="text-3xl mb-2">{lang.flag}</span>
-                <span className="text-sm font-medium text-gray-700">{lang.name}</span>
-              </button>
+      <section className="py-16  bg-green-50" data-aos="fade-up">
+        <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+          <div className="flex justify-center">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-green-100 rounded-2xl opacity-50 blur"></div>
+              <div className="relative bg-gradient-to-r from-green-400 to-teal-500 p-10 rounded-2xl shadow-2xl text-white text-center">
+                <span className="text-7xl"><img src="img/Deck-de-Pesticidas.png" alt="" /></span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">{t("SO0")}</h2>
+            <p className="text-gray-600 mb-4">
+              {t("SO1")}
+            </p>
+            <p className="text-gray-600 mb-6">
+              {t("SO2")}
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="py-16 bg-white" data-aos="fade-up">
+        <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">{t("SO3")}</h2>
+            <p className="text-gray-600 mb-4">
+              {t("SO4")}
+            </p>
+            <p className="text-gray-600 mb-6">
+              {t("SO5")}
+              <a
+                href="https://www.even3.com.br/anais/jalequimlevel4/329169-playsticida--um-jogo-para-auxiliar-no-ensino-e-na-aprendizagem-de-toxicologia-em-pesticidas/"
+               className="text-green-500 hover:text-green-600 hover:underline transition-colors duration-200 ml-2 text-"
+              >Artigo</a>.
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-green-100 rounded-2xl opacity-50 blur"></div>
+              <div className="relative bg-gradient-to-r from-green-400 to-teal-500 p-10 rounded-2xl shadow-2xl text-white text-center">
+                <span className="text-7xl"><img src="img/Vaca-Louca.jpg" alt="" /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Créditos */}
+      <section className="py-16 bg-gray-100" data-aos="flip-up">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">{t("CA6")}</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              {t("CA7")}
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <h3 className="text-xl font-bold text-center text-gray-800 mb-4">UNIVERSIDADE ESTADUAL PAULISTA</h3>
+            <h4 className="text-lg text-center text-gray-700 mb-6">"JÚLIO DE MESQUITA FILHO"</h4>
+            
+            <p className="text-gray-600 mb-6 text-center">
+              {t("CA8")}
+            </p>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-600">
+              <div>Paula Taracas Pinto</div>
+              <div>José Víctor de Souza</div>
+              <div>William de Silva Lopes</div>
+              <div>Maurício Araújo Dias</div>
+              <div>Danilo Medeiros Eléc</div>
+              <div>Arthur Oliveira Artero</div>
+              <div>Daniel Harpayali Monro Vespa</div>
+              <div>Raissa Maria Trindade Oliveira</div>
+              <div>Anni Emily Vieira</div>
+              <div>André Miguel Martínez Junito</div>
+              <div>Blanca Frunkana de Godel Passerino</div>
+              <div>Daniel Peñero Jacinto da Silva</div>
+              <div>Daniley Reis Santos</div>
+              <div>Evelyn Regina Marcelino de Silva (Quem escolheu o nome)</div>
+              <div>Fabiana Benedetti</div>
+              <div>Gratelly Caroline Teodoro</div>
+              <div>Ligia Maria Landi</div>
+              <div>Pauline Richeli Bernardi</div>
+              <div>Priscila Teresira Ananisa</div>
+              <div>Sáfita Gomes Esteves</div>
+              <div>Stephen de Almeida Abres</div>
+            </div>
+            
+            <div className="mt-8 text-center">
+              <p className="text-gray-600">
+                {t("CA9")}
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" className="text-green-600 hover:underline">
+                  http://creativecommons.org/licenses/by-nc-sa/4.0/
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white" data-aos="fade-right">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            {stats.map((stat, index) => (
+              <div key={index} className="p-6 bg-gray-50 rounded-xl shadow-sm">
+                <div className="text-3xl font-bold text-green-600">{stat.value}</div>
+                <div className="text-gray-600 mt-2">{stat.label}</div>
+              </div>
             ))}
           </div>
         </div>
       </section>
+
 
 
       <Footer />
