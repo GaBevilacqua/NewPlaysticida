@@ -8,6 +8,8 @@ import { AlignCenter } from "lucide-react";
 
 function Contato() {
 
+  const { t} = useTranslation();
+
      useEffect(() => {
         AOS.init({
           duration: 1200,
@@ -15,7 +17,7 @@ function Contato() {
         });
       }, []);
 
-    const { t} = useTranslation();
+
 
   // Dados dos idiomas disponíveis
 
@@ -41,22 +43,22 @@ function Contato() {
       </section>
 
      
-
+      
        <section className="py-16 bg-white" data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           <div className="flex justify-center">
             <div className="relative">
               <div className="absolute -inset-4 bg-green-100 rounded-2xl opacity-50 blur"></div>
               <div className="relative bg-gradient-to-r from-green-400 to-teal-500 p-10 rounded-2xl shadow-2xl text-white text-center">
-                <span className="text-7xl">👤</span>
-                <h3 className="text-2xl font-bold mt-4">Faculdade de Ciência e Técnologia</h3>
-                <p className="mt-2">Conversar com o Prof. Dout. Maurício Araújo </p>
+                <span className="text-7xl">🎓</span>
+                <h3 className="text-2xl font-bold mt-4">{t("FA0")}</h3>
+                <p className="mt-2">{t("FA1")} </p>
               </div>
             </div>
           </div>
           
           <div className="mb-6">
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">Contato</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">{t("contact")}</h3>
             
             <div className="space-y-3">
               <div className="flex items-center">
@@ -74,26 +76,29 @@ function Contato() {
               </div>
             </div>
 
+
+
+            
             <div className="mt-4 pt-4 border-t">
               <h4 className="text-lg font-medium text-gray-800 mb-3 flex items-center">
                 <svg className="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
-                Horário de Funcionamento
+                {t("HF0")}
               </h4>
               
               <div className="space-y-2 text-gray-700">
                 <div className="flex justify-between">
-                  <span className="font-medium">Segunda a Sexta:</span>
+                  <span className="font-medium"> {t("HF1")}</span>
                   <span>08:00 - 18:00</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium">Sábado:</span>
+                  <span className="font-medium"> {t("HF2")}</span>
                   <span>09:00 - 14:00</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium">Domingo:</span>
-                  <span >Fechado</span>
+                  <span className="font-medium"> {t("HF3")}</span>
+                  <span > {t("HF4")}</span>
                 </div>
               </div>
             </div>
@@ -108,7 +113,7 @@ function Contato() {
 
 
           <div>
-            <h2 className="text-3xl font-bold text-white mb-4">Localização</h2>
+            <h2 className="text-3xl font-bold text-white mb-4"> {t("LOC")}</h2>
             <p className="text-white mb-4">
               R. Roberto Símonsen, 305 - Centro Educacional, Pres. Prudente - SP, 19060-900
             </p>

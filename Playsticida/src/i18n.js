@@ -81,6 +81,23 @@ i18n.use(initReactI18next).init({
           }
         },
 
+
+         // Contato
+
+        "contact": "Contact",
+        "FA0": "Faculty of Science and Technology",
+        "FA1": "Chat with Prof. Dr. Maurício Araújo",
+        "HF0": "Opening Hours",
+        "HF1": "Monday to Friday:",
+        "HF2": "Saturday",
+        "HF3": "Sunday:",
+        "HF4": "Closed",
+        "LOC": "Location"
+
+        // Regras
+
+        // Sobre
+
       }
     },
     es: {
@@ -160,6 +177,24 @@ i18n.use(initReactI18next).init({
             text: "Cualquier duda o sugerencia se puede hacer enviándonos un correo electrónico."
           }
         },
+
+
+         // Contato
+
+        "contact": "Contacto",
+        "FA0": "Facultad de Ciencia y Tecnología",
+        "FA1": "Hablar con el Prof. Dr. Maurício Araújo",
+        "HF0": "Horario de Atención",
+        "HF1": "Lunes a Viernes:",
+        "HF2": "Sábado",
+        "HF3": "Domingo:",
+        "HF4": "Cerrado",
+        "LOC": "Ubicación"
+
+
+        // Regras
+
+        // Sobre
 
 
       }
@@ -243,8 +278,29 @@ i18n.use(initReactI18next).init({
           }
         },
 
+
+         // Contato
+
+        "contact": "Contatto",
+        "FA0": "Facoltà di Scienze e Tecnologie",
+        "FA1": "Parla con il Prof. Dott. Maurício Araújo",
+        "HF0": "Orari di Apertura",
+        "HF1": "Da Lunedì a Venerdì:",
+        "HF2": "Sabato",
+        "HF3": "Domenica:",
+        "HF4": "Chiuso",
+        "LOC": "Località"
+
+        // Regras
+
+        
+
+        // Sobre
+
       }
     },
+
+
 
     pt: {
       translation: {
@@ -256,7 +312,6 @@ i18n.use(initReactI18next).init({
         language2: "Playsticida está disponível em múltiplos idomas",
         question: "O que é o Playsticida",
         answer: "Uma plataforma educacional inovadora que transforma o aprendizado de química em uma experiência divertida e envolvente",
-        contact: "Contato",
         rules: "Regra",
         about: "Sobre",
         sobre0: "Aprenda Química de Forma Divertida",
@@ -332,7 +387,22 @@ i18n.use(initReactI18next).init({
         
         
 
-        //
+        // Contato
+
+        contact: "Contato",
+        FA0: "Faculdade de Ciência e Técnologia",
+        FA1: "Conversar com o Prof. Dout. Maurício Araújo ",
+        HF0: "Horário de Funcionamento",
+        HF1: "Segunda a Sexta:",
+        HF2: "Sábado",
+        HF3: "Domingo:",
+        HF4: "Fechado",
+        LOC: "Localização",
+
+
+        // Regras
+
+        // Sobre
 
       }
     }

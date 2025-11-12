@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import { AlignCenter } from "lucide-react";
 
 function Regras() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   
 
   // Dados dos idiomas disponíveis
@@ -23,10 +23,10 @@ function Regras() {
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800">
       <Header />
 
-      {/* Espaço para o header fixo */}
+      
       <div className="h-20 md:h-17"></div>
 
-      {/* Hero Section */}
+     
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="bg-gradient-to-r from-green-400 to-blue-500 opacity-10 w-full h-full"></div>
