@@ -24,59 +24,60 @@ function Home() {
     { code: "it", flag: "🇮🇹", name: "Italiano" },
   ];
 
-  // Dados dos recursos educacionais
-  const educationalResources = [
-    {
-      title: "Tabela Periódica Interativa",
-      description: "Explore os elementos químicos de forma dinâmica e interativa.",
-      icon: "🎲",
-      link: "#"
-    },
-    {
-      title: "Videoaulas Exclusivas",
-      description: "Acesse conteúdo em vídeo produzido por especialistas em química.",
-      icon: "🎴",
-      link: "#"
-    },
-    {
-      title: "Simulador de Reações",
-      description: "Experimente combinações químicas virtualmente de forma segura.",
-      icon: "♟️",
-      link: "#"
-    },
-    {
-      title: "Quiz de Fixação",
-      description: "Teste seus conhecimentos com nossos quizzes interativos.",
-      icon: "📝",
-      link: "#"
-    }
-  ];
+  // Dados dos recursos educacionais COM I18N
+const educationalResources = [
+  {
+    title: t("resources.periodicTable.title"),
+    description: t("resources.periodicTable.description"),
+    icon: "🎲",
+    link: "#"
+  },
+  {
+    title: t("resources.videoLessons.title"),
+    description: t("resources.videoLessons.description"),
+    icon: "🎴", 
+    link: "#"
+  },
+  {
+    title: t("resources.reactionSimulator.title"),
+    description: t("resources.reactionSimulator.description"),
+    icon: "♟️",
+    link: "#"
+  },
+  {
+    title: t("resources.quiz.title"),
+    description: t("resources.quiz.description"),
+    icon: "📝",
+    link: "#"
+  }
+];
 
-  // Dados de depoimentos
-  const testimonials = [
-    {
-      name: "Flippity",
-      text: "Plataforma onde o jogo está hospedado, sendo qualquer problema com o plataforma não é problema diretamente do jog em si.",
-      avatar: "⚙️"
-    },
-    {
-      name: "Melhor para PCs",
-      text: "O Jogo pode ser jogado em qualquer plataforma, mas pode ser melhor explorado em Computadores ou tablets grandes.",
-      avatar: "🖥️"
-    },
-    {
-      name: "Dúvidas e sugestões",
-      text: "Qualquer dúvida ou sugestão pode ser feita mandando e-mail para nós.",
-      avatar: "🔍"
-    }
-  ];
+// Dados de depoimentos COM I18N
+const testimonials = [
+  {
+    name: t("testimonials.flippity.name"),
+    text: t("testimonials.flippity.text"),
+    avatar: "⚙️"
+  },
+  {
+    name: t("testimonials.pcs.name"),
+    text: t("testimonials.pcs.text"),
+    avatar: "🖥️"
+  },
+  {
+    name: t("testimonials.doubts.name"),
+    text: t("testimonials.doubts.text"),
+    avatar: "🔍"
+  }
+];
 
-  // Dados de estatísticas
+
+  // Dados de estatísticas com i18n
   const stats = [
-    { value: "Copyright", label: "Licença CC BY_NC_SA 4.0" },
-    { value: "Unesp", label: "Universidade" },
-    { value: "2017", label: "Ano de lançamento" },
-    { value: "2025", label: "Última atualização" }
+    { value: "Copyright", label: t("stats.copyright") },
+    { value: "Unesp", label: t("stats.university") },
+    { value: "2017", label: t("stats.releaseYear") },
+    { value: "2025", label: t("stats.lastUpdate") }
   ];
 
   return (
@@ -150,27 +151,25 @@ function Home() {
           
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Aprenda Química de Forma Divertida</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">{t("sobre0")}</h3>
               <p className="text-gray-600 mb-4">
-                O Playsticida é um jogo educativo desenvolvido para ajudar estudantes de todos os níveis a compreenderem 
-                os conceitos fundamentais da química através de uma abordagem lúdica e interativa.
+                {t("sobre1")}
               </p>
               <p className="text-gray-600 mb-4">
-                Combinando elementos de gamificação com conteúdo educacional de qualidade, nossa plataforma torna 
-                o processo de aprendizagem mais eficaz e agradável.
+                {t("sobre2")}
               </p>
               <ul className="space-y-2 mt-6">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  <span>Desenvolvido por especialistas em educação</span>
+                  <span>{t("sobre3")}</span>
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  <span>Alinhado com as diretrizes curriculares</span>
+                  <span>{t("sobre4")}</span>
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  <span>Totalmente gratuito e acessível</span>
+                  <span>{t("sobre5")}</span>
                 </li>
               </ul>
             </div>
@@ -179,19 +178,19 @@ function Home() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-blue-100 p-6 rounded-xl text-center">
                   <span className="text-4xl">🧪</span>
-                  <h4 className="font-semibold mt-2">Experimentação</h4>
+                  <h4 className="font-semibold mt-2">{t("tablecion1")}</h4>
                 </div>
                 <div className="bg-green-100 p-6 rounded-xl text-center">
                   <span className="text-4xl">🎮</span>
-                  <h4 className="font-semibold mt-2">Gamificação</h4>
+                  <h4 className="font-semibold mt-2">{t("tablecion2")}</h4>
                 </div>
                 <div className="bg-yellow-100 p-6 rounded-xl text-center">
                   <span className="text-4xl">📚</span>
-                  <h4 className="font-semibold mt-2">Conteúdo</h4>
+                  <h4 className="font-semibold mt-2">{t("tablecion3")}</h4>
                 </div>
                 <div className="bg-purple-100 p-6 rounded-xl text-center">
                   <span className="text-4xl">🌱</span>
-                  <h4 className="font-semibold mt-2">Biologia</h4>
+                  <h4 className="font-semibold mt-2">{t("tablecion4")}</h4>
                 </div>
               </div>
             </div>
@@ -203,9 +202,9 @@ function Home() {
       <section className="py-16 bg-white" data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800">Gamificação é o caminho</h2>
+            <h2 className="text-3xl font-bold text-gray-800">{t("RE1")}</h2>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              Conheça o nosso tipo de jogo de maneira rápida
+              {t("RE2")}
             </p>
           </div>
           
@@ -228,8 +227,8 @@ function Home() {
       <section className="py-16 bg-gradient-to-r from-green-400 to-teal-500 text-white" data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold">Informações Importantes</h2>
-            <p className="mt-4 text-lg opacity-90">Em relação ao jogo</p>
+            <h2 className="text-3xl font-bold">{t("D1")}</h2>
+            <p className="mt-4 text-lg opacity-90">{t("D2")}</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -249,7 +248,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Jogue agora Section */}
+      {/* Jogue agora */}
       <section className="py-16 bg-white" data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           <div className="flex justify-center">
@@ -258,25 +257,24 @@ function Home() {
               <div className="relative bg-gradient-to-r from-green-400 to-teal-500 p-10 rounded-2xl shadow-2xl text-white text-center">
                 <span className="text-7xl">🎲</span>
                 <h3 className="text-2xl font-bold mt-4">Playsticida</h3>
-                <p className="mt-2">Aprendizado através da diversão</p>
+                <p className="mt-2">{t("JA1")}</p>
               </div>
             </div>
           </div>
           
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Jogue agora</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">{t("JA2")}</h2>
             <p className="text-gray-600 mb-4">
-              Venha conhecer o jogo Playsticida e aumentar mais seu aprendizado no mundo da Química de forma divertida e interativa.
+              {t("JA3")}
             </p>
             <p className="text-gray-600 mb-6">
-              Nosso jogo educativo foi desenvolvido para ajudar você a compreender conceitos complexos através de 
-              desafios envolventes e uma jogabilidade cativante.
+              {t("JA4")}
             </p>
             <a
               href="https://www.flippity.net/bg.php?k=1-7Akba-QSpdjX6O0W7f_FILNqZWlzvueFpiRQziiG9A"
               className="inline-flex items-center bg-green-600 text-white font-semibold px-6 py-4 rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300 transform hover:-translate-y-1"
             >
-              <span>Jogar Agora</span>
+              <span>{t("JA5")}</span>
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
@@ -291,29 +289,29 @@ function Home() {
       <section className="py-16 bg-gray-50" data-aos="flip-up">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800">Perguntas Frequentes</h2>
-            <p className="mt-4 text-lg text-gray-600">Tire suas dúvidas sobre o Playsticida</p>
+            <h2 className="text-3xl font-bold text-gray-800">{t("FAQ1")}</h2>
+            <p className="mt-4 text-lg text-gray-600">{t("FAQ2")}</p>
           </div>
           
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-2">O Playsticida é realmente gratuito?</h3>
-              <p className="text-gray-600">Sim, nossa plataforma é completamente gratuita para todos os usuários. Acreditamos que a educação de qualidade deve ser acessível a todos.</p>
+              <h3 className="text-xl font-semibold mb-2">{t("FAQ3")}</h3>
+              <p className="text-gray-600">{t("FAQ4")}</p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-2">Para qual faixa etária o jogo é recomendado?</h3>
-              <p className="text-gray-600">O Playsticida foi desenvolvido para todas as idades, mas em especial para pessoas que estão estudando toxologia e pesticidas</p>
+              <h3 className="text-xl font-semibold mb-2">{t("FAQ5")}</h3>
+              <p className="text-gray-600">{t("FAQ6")}</p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-2">Preciso instalar algum software?</h3>
-              <p className="text-gray-600">Não, nossa versão web não requer instalação. Basta acessar pelo navegador. Também temos aplicativos disponíveis para dispositivos móveis.</p>
+              <h3 className="text-xl font-semibold mb-2">{t("FAQ7")}</h3>
+              <p className="text-gray-600">{t("FAQ8")}</p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-2">Como posso utilizar o Playsticida em sala de aula?</h3>
-              <p className="text-gray-600">Atráves de salas de laboratório, rodando em um PC para até 8 pessoas</p>
+              <h3 className="text-xl font-semibold mb-2">{t("FAQ9")}</h3>
+              <p className="text-gray-600">{t("FAQ10")}</p>
             </div>
           </div>
         </div>
