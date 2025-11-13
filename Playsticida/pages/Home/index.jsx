@@ -97,6 +97,7 @@ const testimonials = [
           <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600 animate-gradient">
             {t("welcome")}
           </h1>
+          
 
           <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
            {t("welcome2")}
@@ -106,6 +107,7 @@ const testimonials = [
             <div className="animate-bounce bg-white p-2 w-10 h-10 ring-1 ring-gray-900/5 rounded-full shadow-lg">
               <svg className="w-6 h-6 text-green-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                
               </svg>
             </div>
           </div>
