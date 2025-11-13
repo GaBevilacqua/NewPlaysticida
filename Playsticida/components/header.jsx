@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Download, BookOpen, Mail, Info, Award, PlaneIcon, PlayCircle, BugPlayIcon, Play } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
-  // Efeito para detectar scroll e adicionar sombra/opacidade
+ 
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -27,19 +29,19 @@ function Header() {
   const navLinks = [
 
     {
-      name: "Sobre",
+      name: t("navLinks.sobre.name"),
       to: "/sobre",
       icon: <Info size={18} className="mr-1" />,
       external: false
     },
     {
-      name: "Contato",
+      name: t("navLinks.contato.name"),
       to: "/contato",
       icon: <Mail size={18} className="mr-1" />,
       external: false
     },
     {
-      name: "Regras",
+      name: t("navLinks.regras.name"),
       to: "/regras",
       icon: <BookOpen size={18} className="mr-1" />,
       external: false
@@ -110,7 +112,7 @@ function Header() {
           
           {/* Botão de Jogar com destaque */}
           <a
-            href="https://www.flippity.net/bg.php?k=1-7Akba-QSpdjX6O0W7f_FILNqZWlzvueFpiRQziiG9A"
+            href={t("PLAYURL")}
             target="_blank"
             rel="noopener noreferrer"
             className={`ml-4 flex items-center px-5 py-2.5 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
@@ -120,7 +122,7 @@ function Header() {
             }`}
           >
             <Play size={18} className="mr-2" />
-            Jogar Agora
+            {t("JA5")}
           </a>
         </nav>
 
@@ -189,7 +191,7 @@ function Header() {
             
             {/* Botão Jogar Agora na versão mobile */}
             <a
-              href="https://www.flippity.net/bg.php?k=1-7Akba-QSpdjX6O0W7f_FILNqZWlzvueFpiRQziiG9A"
+              href={t("PLAYURL")}
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleLinkClick}
@@ -200,7 +202,7 @@ function Header() {
               }`}
             >
               <Award size={18} className="mr-2" />
-              Jogar Agora
+              {t("JA5")}
             </a>
           </div>
         </nav>

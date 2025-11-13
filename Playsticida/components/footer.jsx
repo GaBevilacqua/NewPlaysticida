@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { 
   BookOpen, 
   Mail, 
@@ -17,31 +18,26 @@ import {
 
 function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
 
   // Links úteis
   const pageLinks = [
     {
-      name: "Como Jogar",
-      href: "https://i.ibb.co/4fPgYws/Regras.png",
+      name: t("pageLinks.como_jogar.name"),
+      href: t("pageLinks.como_jogar.href"),
       icon: <BookOpen size={16} className="mr-2" />,
       external: true
     },
     {
-      name: "Sobre Nós",
+      name: t("pageLinks.sobre_nos.name"),
       href: "/sobre",
       icon: <Users size={16} className="mr-2" />,
       external: false
     },
     {
-      name: "Regras Completas",
+      name: t("pageLinks.regras.name"),
       href: "/regras",
       icon: <FileText size={16} className="mr-2" />,
-      external: false
-    },
-    {
-      name: "Termos de Uso",
-      href: "/termos",
-      icon: <Info size={16} className="mr-2" />,
       external: false
     }
   ];
@@ -74,7 +70,7 @@ function Footer() {
           />
             <p className="mb-4 text-sm">
               <br></br>
-              Transformando o aprendizado de química em uma experiência divertida e envolvente para todos.
+              {t("FRASE")}
             </p>
             
           </div>
@@ -83,7 +79,7 @@ function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4 text-lg flex items-center">
               <Award size={20} className="mr-2" />
-              Navegação
+             {t("NAV")}
             </h4>
             <ul className="space-y-3">
               {pageLinks.map((link, index) => (
@@ -117,7 +113,7 @@ function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4 text-lg flex items-center">
               <Mail size={20} className="mr-2" />
-              Contato
+              {t("CONT")}
             </h4>
             <ul className="space-y-3">
               {contactLinks.map((contact, index) => (
@@ -142,7 +138,7 @@ function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-700 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center text-sm mb-4 md:mb-0">
-            <span>&copy; {currentYear} Playsticida. Todos os direitos reservados.</span>
+            <span>&copy; {currentYear} {t("DIR")}</span>
           </div>
           
 

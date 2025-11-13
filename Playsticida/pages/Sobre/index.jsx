@@ -71,7 +71,7 @@ function Sobre() {
               <a
                 href="https://www.even3.com.br/anais/jalequimlevel4/329169-playsticida--um-jogo-para-auxiliar-no-ensino-e-na-aprendizagem-de-toxicologia-em-pesticidas/"
                className="text-green-500 hover:text-green-600 hover:underline transition-colors duration-200 ml-2 text-"
-              >Artigo</a>.
+              >{t("ART")}</a>.
             </p>
           </div>
 

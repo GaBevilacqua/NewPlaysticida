@@ -8,6 +8,7 @@ i18n.use(initReactI18next).init({
         welcome: "Welcome to Playsticida!",
         welcome2: "Discover the world of chemistry in a fun and interactive way",
         language: "Select your language",
+        about:"About",
         language2: "Playsticida is available in multiple languages",
         question: "What is Playsticida?",
         answer: "An innovative educational platform that transforms chemistry learning into a fun and engaging experience",
@@ -93,6 +94,7 @@ i18n.use(initReactI18next).init({
         "HF3": "Sunday:",
         "HF4": "Closed",
         "LOC": "Location",
+        CRS: "Social Media",
 
         // Regras
         "rules": "Rules",
@@ -191,7 +193,44 @@ i18n.use(initReactI18next).init({
         "SO2": "The purpose is to apply knowledge in practice, but without leaving the classroom, as a teaching complement.",
         "SO3": "Development",
         "SO4": "Made by students and teachers from diverse backgrounds, to meet the need for virtual and accessible learning.",
-        "SO5": "If you wish, feel free to read our"
+        "SO5": "If you wish, feel free to read our",
+
+        //Header
+        navLinks:{
+          sobre: {
+            name: "About",
+          },
+          contato:{
+            name: "Contact",
+          },
+          regras:{
+            name:"Rules",
+          }
+        },
+        PLAYURL:"https://www.google.com.br",
+
+        //Footer
+
+        pageLinks:{
+        como_jogar: {
+          name: "How to Play",
+          href: "https://i.ibb.co/4fPgYws/Regras.png",
+        },
+        sobre_nos:{
+          name: "About Us",
+        },
+        regras:{
+          name: "Rules",
+        }
+      },
+
+      FRASE: "Transforming chemistry learning into a fun and engaging experience for everyone.",
+      CONT: "Contact",
+      NAV: "Navigation",
+      DIR: "Playsticida. All rights reserved.",
+      ART:"Article",
+
+
         
 
       }
@@ -203,6 +242,7 @@ i18n.use(initReactI18next).init({
         language: "Selecciona tu idioma",
         language2: "Playsticida está disponible en varios idiomas",
         question: "¿Qué es Playsticida?",
+        about:"Acerca de Nosotros",
         answer: "Una plataforma educativa innovadora que transforma el aprendizaje de la química en una experiencia divertida y atractiva",
         sobre0: "Impara la Chimica in Modo Divertente",
         sobre1: "Playsticida es un juego educativo desarrollado para ayudar a estudiantes de todos los niveles a comprender los conceptos fundamentales de la química mediante un enfoque lúdico e interactivo.",
@@ -286,6 +326,7 @@ i18n.use(initReactI18next).init({
         "HF3": "Domingo:",
         "HF4": "Cerrado",
         "LOC": "Ubicación",
+        CRS: "Redes Sociales",
 
 
          "rules": "Reglas",
@@ -384,7 +425,42 @@ i18n.use(initReactI18next).init({
         "SO2": "El propósito es aplicar el conocimiento en la práctica, pero sin salir del aula, como complemento de enseñanza.",
         "SO3": "Desarrollo",
         "SO4": "Hecho por estudiantes y profesores de los más diversos medios, para atender la necesidad de aprendizaje virtual y accesible.",
-        "SO5": "Si lo desea, quédese con la libertad de leer nuestro"
+        "SO5": "Si lo desea, quédese con la libertad de leer nuestro",
+
+        //Header
+        navLinks:{
+          sobre: {
+            name: "Acerca de Nosotros",
+          },
+          contato:{
+            name: "Contacto",
+          },
+          regras:{
+            name:"Reglas",
+          }
+        },
+        PLAYURL:"https://www.google.com.br",
+
+        //Footer
+
+        pageLinks:{
+        como_jogar: {
+          name: "Cómo Jugar",
+          href: "https://i.ibb.co/4fPgYws/Regras.png",
+        },
+        sobre_nos:{
+          name: "Sobre Nosotros",
+        },
+        regras:{
+          name: "Reglas",
+        }
+      },
+
+      FRASE: "Transformando el aprendizaje de la química en una experiencia divertida y atractiva para todos.",
+      CONT: "Contacto",
+      NAV: "Navegación",
+      DIR: "Playsticida. Todos los derechos reservados.",
+      ART:"Artículo",
 
 
       }
@@ -397,7 +473,7 @@ i18n.use(initReactI18next).init({
         language2: "Playsticida è disponibile in più lingue",
         question: "Cos'è Playsticida?",
         answer: "Una piattaforma educativa innovativa che trasforma l'apprendimento della chimica in un'esperienza divertente e coinvolgente",
-        about:"fjoerifjiorjfiorejfeiorjfeio",
+        about:"Informazioni",
         sobre0: "Aprende Química de Forma Divertida",
         sobre1: "Playsticida è un gioco educativo sviluppato per aiutare studenti di tutti i livelli a comprendere i concetti fondamentali della chimica attraverso un approccio ludico e interattivo.",
         sobre2: "Combinando elementi di gamification con contenuti educativi di qualità, la nostra piattaforma rende il processo di apprendimento più efficace e piacevole.",
@@ -579,7 +655,45 @@ i18n.use(initReactI18next).init({
           "SO2": "Lo scopo è applicare la conoscenza nella pratica, ma senza uscire dall'aula, come complemento didattico.",
           "SO3": "Sviluppo",
           "SO4": "Realizzato da studenti e insegnanti dei più diversi ambiti, per soddisfare l'esigenza di apprendimento virtuale e accessibile.",
-          "SO5": "Se lo desideri, sentiti libero di leggere il nostro"
+          "SO5": "Se lo desideri, sentiti libero di leggere il nostro",
+
+          //Header
+          navLinks:{
+          sobre: {
+            name: "Informazioni",
+          },
+          contato:{
+            name: "Contatto",
+          },
+          regras:{
+            name:"Regole",
+          }
+        },
+        PLAYURL:"https://www.google.com.br",
+
+        //Footer
+        
+        pageLinks:{
+        como_jogar: {
+          name: "Come Giocare",
+          href: "https://i.ibb.co/4fPgYws/Regras.png",
+        },
+        sobre_nos:{
+          name: "Chi Siamo",
+        },
+        regras:{
+          name: "Regole",
+        }
+      },
+
+      FRASE: "Trasformare l'apprendimento della chimica in un'esperienza divertente e coinvolgente per tutti.",
+      CONT: "Contatto",
+      NAV: "Navigazione",
+      DIR: "Playsticida. Tutti i diritti riservati.",
+      ART:"Articolo",
+      CRS: "Social Media",
+
+          
 
       }
     },
@@ -682,6 +796,8 @@ i18n.use(initReactI18next).init({
         HF3: "Domingo:",
         HF4: "Fechado",
         LOC: "Localização",
+        CRS:"Redes Sociais",
+
 
 
         // Regras
@@ -787,6 +903,45 @@ i18n.use(initReactI18next).init({
         SO3:"Desenvolvimento",
         SO4:"Feito por alunos e professores pdos mais diversos meios, para atender a necessidade de aprendizado virtual e acessível.",
         SO5:"Caso quiser fique avontade de ler nosso",
+
+
+        //Header
+
+        PLAYURL:"https://www.flippity.net/bg.php?k=1-7Akba-QSpdjX6O0W7f_FILNqZWlzvueFpiRQziiG9A",
+
+        navLinks:{
+          sobre: {
+            name: "Sobre",
+          },
+          contato:{
+            name: "Contato",
+          },
+          regras:{
+            name:"Regras",
+          }
+        },
+
+        //Footer
+
+        pageLinks:{
+          como_jogar: {
+            name: "Como Jogar",
+            href: "https://i.ibb.co/4fPgYws/Regras.png",
+          },
+          sobre_nos:{
+            name: "Sobre nós",
+          },
+          regras:{
+            name: "Regras",
+          }
+        },
+
+        FRASE:"Transformando o aprendizado de química em uma experiência divertida e envolvente para todos.",
+        CONT:"Contato",
+        NAV:"Navegação",
+        DIR:"Playsticida. Todos os direitos reservados.",
+        ART:"Artigo",
+
         
 
 

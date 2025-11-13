@@ -5,8 +5,14 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { AlignCenter } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+
 
 function Contato() {
+
+  
+
 
   const { t} = useTranslation();
 
@@ -18,10 +24,41 @@ function Contato() {
       }, []);
 
 
+  // Dados de depoimentos COM I18N
+const socialNetworks = [
+  {
+    name: "Instagram",
+    user: "@fcatunesp",
+    text: "Siga-nos no Instagram",
+    icon: <FontAwesomeIcon icon={faInstagram} color="#E4405F" size="2x" />,
+    href: "https://www.instagram.com/fctunesp/",
+ 
+  },
+  {
+    name: "Facebook",
+    user: "/UnespPrudente",
+    text: "Curta nossa página",
+    icon: <FontAwesomeIcon icon={faFacebook} color="#1877F2" size="2x" />,
+    href: "https://www.facebook.com/UnespPrudente/",
+
+  },
+  {
+    name: "YouTube",
+    user: "@fct_unesp",
+    text: "Inscreva-se no canal",
+    icon: <FontAwesomeIcon icon={faYoutube} color="#FF0000" size="2x" />,
+    href: "https://www.youtube.com/@fct_unesp",
+ 
+  }
+];
+
+
+
 
   // Dados dos idiomas disponíveis
 
     return(
+      
             <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800">
       <Header />
 
@@ -41,8 +78,7 @@ function Contato() {
           
         </div>
       </section>
-
-     
+      
       
        <section className="py-16 bg-white" data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
@@ -108,45 +144,65 @@ function Contato() {
 
       
 
-      <section className="py-16 bg-green-500" data-aos="fade-up">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-
-
-          <div>
-            <h2 className="text-3xl font-bold text-white mb-4"> {t("LOC")}</h2>
-            <p className="text-white mb-4">
-              R. Roberto Símonsen, 305 - Centro Educacional, Pres. Prudente - SP, 19060-900
-            </p>
-            
-
-         
-
-            
-            
-            
-         </div>
-          <div className="flex justify-center">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-green-99 rounded-1g opacity-50 "></div>
-              <div className="relative bg-gradient-to-r from-green-400 to-teal-500 p-10 rounded-sm shadow-1g text-white text-center">
-                <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.133492686153!2d-51.410716987373256!3d-22.120885410176516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f43f0ff7f359%3A0x3ff5d10b95e4acbf!2sUnesp%20-%20Faculdade%20de%20Ci%C3%AAncias%20e%20Tecnologia%20(FCT)!5e0!3m2!1spt-BR!2sbr!4v1757599936942!5m2!1spt-BR!2sbr" 
-              width="500" 
-              height="450" 
-              style={{border:0}} s
+     <section className="py-16 bg-green-400" data-aos="fade-up">
+  <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 className="text-3xl font-bold text-white mb-4">{t("LOC")}</h2>
+      <p className="text-white text-xl mb-4">
+        R. Roberto Símonsen, 305 - Centro Educacional, Pres. Prudente - SP, 19060-900
+      </p>
+    </div>
+    
+    <div className="flex justify-center">
+      <div className="relative w-full">
+        <div className="absolute -inset-3 bg-green-99 rounded-lg opacity-50"></div>
+        <div className="relative bg-gradient-to-r from-green-400 to-teal-500 p-5 rounded-sm shadow-lg text-white text-center">
+          {/* Container responsivo para o iframe */}
+          <div className="relative w-full h-0 pb-[75%]"> {/* 4:3 aspect ratio */}
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.133492686153!2d-51.410716887373256!3d-22.120885410176516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f43f0ff7f359%3A0x3ff5d10b95e4acbf!2sUnesp%20-%20Faculdade%20de%20Ci%C3%AAncias%20e%20Tecnologia%20(FCT)!5e0!3m2!1spt-BR!2sbr!4v1757599936942!5m2!1spt-BR!2sbr" 
+              className="absolute top-0 left-0 w-full h-full border-0"
               allowFullScreen 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
+              title="Localização no mapa"
             ></iframe>
-              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      {/* Redes sociais */}
+<section className="py-16 " data-aos="fade-up">
+  <div className="max-w-6xl mx-auto px-4">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold">{t("CRS")}</h2>
+     
+    </div>
+    
+    <div className="grid md:grid-cols-3 gap-4 ">
+      {socialNetworks.map((social, index) => (
+        <a 
+          key={index} 
+          href={social.href} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className=" backdrop-blur-sm p-6 rounded-2xl shadow-lg bg-green-300 hover:bg-green-400 transition-all duration-300 block"
+        >
+          <div className="flex items-center  ">
+            <span className="text-3xl mr-3">{social.icon}</span>
+            <div>
+              <h4 className="font-semibold text-2xl">{social.name}</h4>
+              <p className="text-lg opacity-80">{social.user}</p>
             </div>
           </div>
-          
-          
-        </div>
-      </section>
-
-
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
       <Footer />
     </div>
   );
