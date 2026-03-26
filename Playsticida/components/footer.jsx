@@ -45,13 +45,13 @@ function Footer() {
   // Links de contato
   const contactLinks = [
     {
-      name: "exemplo@email.com",
-      href: "mailto:exemplo@email.com",
+      name: "ma.dias@unesp.br",
+      href: "mailto:ma.dias@unesp.br",
       icon: <Mail size={16} className="mr-2" />
     },
     {
-      name: "(11) 99999-9999",
-      href: "tel:+5511999999999",
+      name: "(18) 3229-5388",
+      href: "tel:+551832295388",
       icon: <Phone size={16} className="mr-2" />
     }
   ];

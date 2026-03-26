@@ -150,7 +150,9 @@ function Regras() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-green-100 rounded-2xl opacity-50 blur"></div>
                 <div className="relative bg-gradient-to-r from-green-400 to-teal-500 p-10 rounded-2xl shadow-2xl text-white text-center">
-                  <span className="text-7xl"><img src="img/Agro-Cult-01.png" alt="" /></span>
+                 <span className="text-7xl">
+                    <img src={t("IMG01")} alt="" />
+                  </span>
                   <h3 className="text-2xl font-bold mt-4">{t("CJ15")}</h3>
                   <p className="mt-2">{t("CJ16")}</p>
                 </div>
@@ -267,7 +269,9 @@ function Regras() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-green-100 rounded-2xl opacity-50 blur"></div>
                 <div className="relative bg-gradient-to-r from-green-400 to-teal-500 p-10 rounded-2xl shadow-2xl text-white text-center">
-                  <span className="text-2xl font-bold mt-4"><img src="img/Bonus-5-Prendas.png" alt="" />{t("RJ23")}</span>
+                  <span className="text-7xl">
+                    <img src={t("IMG03")} alt="" />
+                  </span>
                   <h3 className="mt-2">{t("RJ24")}</h3>
                   <p className="mt-2"></p>
                 </div>
@@ -278,15 +282,12 @@ function Regras() {
               <h3 className="text-2xl font-bold text-gray-800 mb-4">{t("RJ25")}</h3>
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start">
-                  <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">B</span>
                   <span><strong>{t("RJ26")}</strong> {t("RJ27")}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">P</span>
                   <span><strong>{t("RJ28")}</strong> {t("RJ29")}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">⚠️</span>
                   <span>{t("RJ30")}<strong>{t("RJ31")}</strong> </span>
                 </li>
               </ul>
@@ -298,7 +299,9 @@ function Regras() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-green-100 rounded-2xl opacity-50 blur"></div>
                 <div className="relative bg-gradient-to-r from-green-400 to-teal-500 p-10 rounded-2xl shadow-2xl text-white text-center">
-                  <span className="text-7xl"><img src="img/Screenshot from 2025-09-12 16-17-19.png" alt="" /></span>
+                  <span className="text-7xl">
+                    <img src={t("IMG02")} alt="" />
+                  </span>
                   <h3 className="text-2xl font-bold mt-4">{t("RJ32")}</h3>
                   <p className="mt-2">{t("RJ33")}</p>
                 </div>
@@ -332,19 +335,15 @@ function Regras() {
               <h3 className="text-2xl font-bold text-gray-800 mb-4">{t("RJ39")}</h3>
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start">
-                  <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">1</span>
                   <span>{t("RJ40")}<strong>{t("RJ42")}</strong> </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">2</span>
                   <span>{t("RJ43")}<strong>{t("RJ43")}</strong> </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">3</span>
                   <span>{t("RJ44")}<strong>{t("RJ45")}</strong> </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">🏁</span>
                   <span>{t("RJ46")}<strong>{t("RJ47")}</strong> </span>
                 </li>
               </ul>
@@ -393,6 +392,10 @@ function Regras() {
           </div>
         </div>
       </section>
+
+      
+
+      
 
       
       <Footer />

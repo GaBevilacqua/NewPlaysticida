@@ -124,12 +124,12 @@ i18n.use(initReactI18next).init({
         "CJ17": "Card Types",
         "CJ18": "Pesticide information:",
         "CJ19": "Details about products",
-        "CJ20": "Chance/Setback:",
+        "CJ20": "Luck/Reverse:",
         "CJ21": "Random events with consequences",
         "CJ22": "Bonus cards:",
-        "CJ23": "Additional points (5, 10 or 15 tokens)",
+        "CJ23": "Additional points (5, 10 or 15 Gifts)",
         "CJ24": "Penalty cards:",
-        "CJ25": "Point loss (3, 5 or 7 tokens)",
+        "CJ25": "Point loss (3, 5 or 7 Gifts)",
         "RJ0": "Game Rules",
         "RJ1": "Understand how to play and the mechanics that make Playsticida an educational and fun experience",
         "RJ2": "Preparation",
@@ -138,7 +138,7 @@ i18n.use(initReactI18next).init({
         "RJ5": "Card organization:",
         "RJ6": "Before the game starts, the cards have already been automatically shuffled.",
         "RJ7": "Farmer order:",
-        "RJ8": "Each member rolls the white dice. The one with the highest value starts the game and receives 5 tokens.",
+        "RJ8": "Each member rolls the white dice. The one with the highest value starts the game and receives 5 Gifts.",
         "RJ9": "Sequence:",
         "RJ10": "The next player will be the one in clockwise sequence from the first farmer.",
         "RJ11": "Dynamics",
@@ -146,20 +146,20 @@ i18n.use(initReactI18next).init({
         "RJ13": "Game Dynamics",
         "RJ14": "Once the farmer order is established, the 3 dice are rolled, and then a pesticide card is drawn.",
         "RJ15": "3 matches:",
-        "RJ16": "Wins 15 tokens",
+        "RJ16": "Wins 15 Gifts",
         "RJ17": "2 matches:",
-        "RJ18": "Wins 10 tokens",
+        "RJ18": "Wins 10 Gifts",
         "RJ19": "1 match:",
-        "RJ20": "Wins 5 tokens",
+        "RJ20": "Wins 5 Gifts",
         "RJ21": "No matches:",
-        "RJ22": "Loses 5 tokens or goes back 2 spaces",
+        "RJ22": "Loses 5 Gifts or goes back 2 spaces",
         "RJ23": "Specials",
         "RJ24": "Bonus and penalty cards",
         "RJ25": "Special Cards",
         "RJ26": "Bonus cards:",
-        "RJ27": "Whenever a farmer is on a crop space and draws a card for an appropriate pesticide, they must take a bonus card of 5, 10 or 15 tokens.",
+        "RJ27": "Whenever a farmer is on a crop space and draws a card for an appropriate pesticide, they must take a bonus card of 5, 10 or 15 Gifts.",
         "RJ28": "Penalty cards:",
-        "RJ29": "Whenever a farmer is required to draw a penalty card, they must be penalized 3, 5 or 7 tokens for incorrect pesticide application.",
+        "RJ29": "Whenever a farmer is required to draw a penalty card, they must be penalized 3, 5 or 7 Gifts for incorrect pesticide application.",
         "RJ30": "Attention:",
         "RJ31": "Bonus and penalty cards share the same deck.",
         "RJ32": "Chance/Setback",
@@ -171,11 +171,11 @@ i18n.use(initReactI18next).init({
         "RJ38": "Game ending",
         "RJ39": "Game End and Scoring",
         "RJ40": "Arrival:",
-        "RJ41": "The first farmer to reach the end receives 30 tokens.",
+        "RJ41": "The first farmer to reach the end receives 30 Gifts.",
         "RJ42": "Scoring:",
-        "RJ43": "All farmers will have their tokens counted, even those who haven't returned to their farm.",
+        "RJ43": "All farmers will have their Gifts counted, even those who haven't returned to their farm.",
         "RJ44": "Tiebreaker:",
-        "RJ45": "In case of a tie, all toxicological classes are added to the tokens.",
+        "RJ45": "In case of a tie, all toxicological classes are added to the Gifts.",
         "RJ46": "Winner:",
         "RJ47": "The farmer with the highest score wins.",
         "CA0": "Ready to play?",
@@ -194,6 +194,11 @@ i18n.use(initReactI18next).init({
         "SO3": "Development",
         "SO4": "Made by students and teachers from diverse backgrounds, to meet the need for virtual and accessible learning.",
         "SO5": "If you wish, feel free to read our",
+        "IMG01": "img/Agro-Cult-01 (EN).png",
+        "IMG02": "img/SR-EN.png",
+        "IMG03": "img/Bonus-EN.png",
+ 
+
 
         //Header
         navLinks:{
@@ -207,14 +212,14 @@ i18n.use(initReactI18next).init({
             name:"Rules",
           }
         },
-        PLAYURL:"https://www.google.com.br",
+        PLAYURL:"https://www.flippity.net/v2/bg.php?k=e/2PACX-1vTFYzxu-fNFjKKhBsmIygkN1F97tcYx-G65WlgO7h3jSHggqiJ2xGHcNoG1tgHV_YQlgPeuF4KjZ1-6",
 
         //Footer
 
         pageLinks:{
         como_jogar: {
           name: "How to Play",
-          href: "https://i.ibb.co/4fPgYws/Regras.png",
+          href: "pdf/Regras-EN.pdf",
         },
         sobre_nos:{
           name: "About Us",
@@ -273,6 +278,7 @@ i18n.use(initReactI18next).init({
         FAQ8: "No, nuestra versión web no requiere instalación. Solo accede a través de tu navegador. También tenemos aplicaciones disponibles para dispositivos móviles.",
         FAQ9: "¿Cómo puedo usar Playsticida en el aula?",
         FAQ10: "A través de laboratorios, ejecutándose en un solo PC para hasta 8 personas.",
+        
          stats: {
           copyright: "Licencia CC BY_NC_SA 4.0",
           university: "Universidad",
@@ -359,9 +365,9 @@ i18n.use(initReactI18next).init({
         "CJ20": "Suerte/Revés:",
         "CJ21": "Eventos aleatorios con consecuencias",
         "CJ22": "Cartas de bonificación:",
-        "CJ23": "Puntos adicionales (5, 10 o 15 fichas)",
+        "CJ23": "Puntos adicionales (5, 10 o 15 Regalos)",
         "CJ24": "Cartas de penalización:",
-        "CJ25": "Pérdida de puntos (3, 5 o 7 fichas)",
+        "CJ25": "Pérdida de puntos (3, 5 o 7 Regalos)",
         "RJ0": "Reglas del Juego",
         "RJ1": "Entiende cómo jugar y las mecánicas que hacen de Playsticida una experiencia educativa y divertida",
         "RJ2": "Preparación",
@@ -370,7 +376,7 @@ i18n.use(initReactI18next).init({
         "RJ5": "Organización de las cartas:",
         "RJ6": "Antes del inicio del juego las cartas ya han sido automáticamente barajadas.",
         "RJ7": "Orden de los agricultores:",
-        "RJ8": "Cada integrante lanza los dados blancos. Quien obtenga el mayor valor inicia el juego y gana 5 fichas.",
+        "RJ8": "Cada integrante lanza los dados blancos. Quien obtenga el mayor valor inicia el juego y gana 5 Regalos.",
         "RJ9": "Secuencia:",
         "RJ10": "El siguiente jugador será aquel que esté en la secuencia en sentido horario al primer agricultor.",
         "RJ11": "Dinámica",
@@ -378,20 +384,20 @@ i18n.use(initReactI18next).init({
         "RJ13": "Dinámica del Juego",
         "RJ14": "Una vez establecido el orden de los agricultores, se lanzan los 3 dados y, a continuación, se retira una carta referente a un pesticida.",
         "RJ15": "3 coincidencias:",
-        "RJ16": "Gana 15 fichas",
+        "RJ16": "Gana 15 Regalos",
         "RJ17": "2 coincidencias:",
-        "RJ18": "Gana 10 fichas",
+        "RJ18": "Gana 10 Regalos",
         "RJ19": "1 coincidencia:",
-        "RJ20": "Gana 5 fichas",
+        "RJ20": "Gana 5 Regalos",
         "RJ21": "Ninguna coincidencia:",
-        "RJ22": "Pierde 5 fichas o retrocede 2 casillas",
+        "RJ22": "Pierde 5 Regalos o retrocede 2 casillas",
         "RJ23": "Especiales",
         "RJ24": "Cartas de bonificación y penalización",
         "RJ25": "Cartas Especiales",
         "RJ26": "Cartas de bonificación:",
-        "RJ27": "Siempre que un agricultor esté en un cultivo y retire una carta referente a un pesticida apropiado, deberá tomar una carta de bonificación de 5, 10 o 15 fichas.",
+        "RJ27": "Siempre que un agricultor esté en un cultivo y retire una carta referente a un pesticida apropiado, deberá tomar una carta de bonificación de 5, 10 o 15 Regalos.",
         "RJ28": "Cartas de penalización:",
-        "RJ29": "Siempre que un agricultor sea obligado a retirar una carta de penalización, deberá ser penalizado en 3, 5 o 7 fichas por la aplicación errónea del pesticida.",
+        "RJ29": "Siempre que un agricultor sea obligado a retirar una carta de penalización, deberá ser penalizado en 3, 5 o 7 Regalos por la aplicación errónea del pesticida.",
         "RJ30": "Atención:",
         "RJ31": "Las cartas de bonificación y de penalización comparten el mismo mazo.",
         "RJ32": "Suerte/Revés",
@@ -403,11 +409,11 @@ i18n.use(initReactI18next).init({
         "RJ38": "Término del juego",
         "RJ39": "Final del Juego y Puntuación",
         "RJ40": "Llegada:",
-        "RJ41": "El agricultor que llegue al final primero recibe 30 fichas.",
+        "RJ41": "El agricultor que llegue al final primero recibe 30 Regalos.",
         "RJ42": "Puntuación:",
-        "RJ43": "Todos los agricultores tendrán sus fichas sumadas, incluso los que no han regresado a su granja.",
+        "RJ43": "Todos los agricultores tendrán sus Regalos sumados, incluso los que no han regresado a su granja.",
         "RJ44": "Desempate:",
-        "RJ45": "En caso de empate, se suman a las fichas todas las clases toxicológicas.",
+        "RJ45": "En caso de empate, se suman a los Regalos todas las clases toxicológicas.",
         "RJ46": "Ganador:",
         "RJ47": "Gana el agricultor que posea la mayor puntuación.",
         "CA0": "¿Listo para jugar?",
@@ -426,6 +432,9 @@ i18n.use(initReactI18next).init({
         "SO3": "Desarrollo",
         "SO4": "Hecho por estudiantes y profesores de los más diversos medios, para atender la necesidad de aprendizaje virtual y accesible.",
         "SO5": "Si lo desea, quédese con la libertad de leer nuestro",
+        "IMG01": "img/Agro-Cult-01-ES.png",
+        "IMG02": "img/SR-ES.png",
+         "IMG03": "img/Bonus-ES.png",
 
         //Header
         navLinks:{
@@ -439,14 +448,14 @@ i18n.use(initReactI18next).init({
             name:"Reglas",
           }
         },
-        PLAYURL:"https://www.google.com.br",
+        PLAYURL:"https://www.flippity.net/v2/bg.php?k=e/2PACX-1vQsrhNXg0Y9-DSfoaCHFn6fU1tLpNcBXMWeTQT35IsofxJKj0HM87qdrdGjPQBaS3BU5toHhmQiLr-q",
 
         //Footer
 
         pageLinks:{
         como_jogar: {
           name: "Cómo Jugar",
-          href: "https://i.ibb.co/4fPgYws/Regras.png",
+          href: "pdf/Regras-ES.pdf",
         },
         sobre_nos:{
           name: "Sobre Nosotros",
@@ -586,12 +595,12 @@ i18n.use(initReactI18next).init({
           "CJ17": "Tipi di Carte",
           "CJ18": "Informazioni sul pesticida:",
           "CJ19": "Dettagli sui prodotti",
-          "CJ20": "Fortuna/Contrattempo:",
+          "CJ20": "Fortuna/Sfortuna:",
           "CJ21": "Eventi casuali con conseguenze",
           "CJ22": "Carte bonus:",
-          "CJ23": "Punti aggiuntivi (5, 10 o 15 gettoni)",
+          "CJ23": "Punti aggiuntivi (5, 10 o 15 Regali)",
           "CJ24": "Carte penalità:",
-          "CJ25": "Perdita di punti (3, 5 o 7 gettoni)",
+          "CJ25": "Perdita di punti (3, 5 o 7 Regali)",
           "RJ0": "Regole del Gioco",
           "RJ1": "Comprendi come giocare e le meccaniche che rendono Playsticida un'esperienza educativa e divertente",
           "RJ2": "Preparazione",
@@ -600,7 +609,7 @@ i18n.use(initReactI18next).init({
           "RJ5": "Organizzazione delle carte:",
           "RJ6": "Prima dell'inizio del gioco le carte sono già state automaticamente mescolate.",
           "RJ7": "Ordine degli agricoltori:",
-          "RJ8": "Ogni membro lancia i dadi bianchi. Chi ottiene il valore più alto inizia il gioco e riceve 5 gettoni.",
+          "RJ8": "Ogni membro lancia i dadi bianchi. Chi ottiene il valore più alto inizia il gioco e riceve 5 Regali.",
           "RJ9": "Sequenza:",
           "RJ10": "Il prossimo giocatore sarà quello in sequenza in senso orario dal primo agricoltore.",
           "RJ11": "Dinamica",
@@ -608,20 +617,20 @@ i18n.use(initReactI18next).init({
           "RJ13": "Dinamica di Gioco",
           "RJ14": "Una volta stabilito l'ordine degli agricoltori, si lanciano i 3 dadi e, in sequenza, si pesca una carta relativa a un pesticida.",
           "RJ15": "3 corrispondenze:",
-          "RJ16": "Vince 15 gettoni",
+          "RJ16": "Vince 15 Regali",
           "RJ17": "2 corrispondenze:",
-          "RJ18": "Vince 10 gettoni",
+          "RJ18": "Vince 10 Regali",
           "RJ19": "1 corrispondenza:",
-          "RJ20": "Vince 5 gettoni",
+          "RJ20": "Vince 5 Regali",
           "RJ21": "Nessuna corrispondenza:",
-          "RJ22": "Perde 5 gettoni o torna indietro di 2 caselle",
+          "RJ22": "Perde 5 Regali o torna indietro di 2 caselle",
           "RJ23": "Speciali",
           "RJ24": "Carte bonus e penalità",
           "RJ25": "Carte Speciali",
           "RJ26": "Carte bonus:",
-          "RJ27": "Ogni volta che un agricoltore si trova su una coltura e pesca una carta relativa a un pesticida appropriato, deve prendere una carta bonus di 5, 10 o 15 gettoni.",
+          "RJ27": "Ogni volta che un agricoltore si trova su una coltura e pesca una carta relativa a un pesticida appropriato, deve prendere una carta bonus di 5, 10 o 15 Regali.",
           "RJ28": "Carte penalità:",
-          "RJ29": "Ogni volta che un agricoltore è obbligato a pescare una carta penalità, deve essere penalizzato di 3, 5 o 7 gettoni per l'applicazione errata del pesticida.",
+          "RJ29": "Ogni volta che un agricoltore è obbligato a pescare una carta penalità, deve essere penalizzato di 3, 5 o 7 Regali per l'applicazione errata del pesticida.",
           "RJ30": "Attenzione:",
           "RJ31": "Le carte bonus e penalità condividono lo stesso mazzo.",
           "RJ32": "Fortuna/Contrattempo",
@@ -633,11 +642,11 @@ i18n.use(initReactI18next).init({
           "RJ38": "Termine del gioco",
           "RJ39": "Fine del Gioco e Punteggio",
           "RJ40": "Arrivo:",
-          "RJ41": "Il primo agricoltore che arriva alla fine riceve 30 gettoni.",
+          "RJ41": "Il primo agricoltore che arriva alla fine riceve 30 Regali.",
           "RJ42": "Punteggio:",
-          "RJ43": "Tutti gli agricoltori avranno i loro gettoni sommati, anche quelli che non sono tornati alla loro fattoria.",
+          "RJ43": "Tutti gli agricoltori avranno i loro Regali sommati, anche quelli che non sono tornati alla loro fattoria.",
           "RJ44": "Spareggio:",
-          "RJ45": "In caso di pareggio, si sommano ai gettoni tutte le classi tossicologiche.",
+          "RJ45": "In caso di pareggio, si sommano ai Regali tutte le classi tossicologiche.",
           "RJ46": "Vincitore:",
           "RJ47": "Vince l'agricoltore che possiede il punteggio più alto.",
           "CA0": "Pronto a giocare?",
@@ -656,6 +665,9 @@ i18n.use(initReactI18next).init({
           "SO3": "Sviluppo",
           "SO4": "Realizzato da studenti e insegnanti dei più diversi ambiti, per soddisfare l'esigenza di apprendimento virtuale e accessibile.",
           "SO5": "Se lo desideri, sentiti libero di leggere il nostro",
+          "IMG01": "img/Agro-Cult-01-IT.png",
+          "IMG02": "img/SR-IT.png",
+           "IMG03": "img/Bonus-IT.png",
 
           //Header
           navLinks:{
@@ -669,14 +681,14 @@ i18n.use(initReactI18next).init({
             name:"Regole",
           }
         },
-        PLAYURL:"https://www.google.com.br",
+        PLAYURL:"https://www.flippity.net/v2/bg.php?k=e/2PACX-1vS34Nq8QqivigsBZ_GiLLm7ZT3i6oi8aNZi5YE1yBeAPKTHP5vf4jEpWaLg00Mc97szQGLO6N157Yms",
 
         //Footer
         
         pageLinks:{
         como_jogar: {
           name: "Come Giocare",
-          href: "https://i.ibb.co/4fPgYws/Regras.png",
+          href: "pdf/Regras-IT.pdf",
         },
         sobre_nos:{
           name: "Chi Siamo",
@@ -889,6 +901,9 @@ i18n.use(initReactI18next).init({
         CA3: "Comece agora mesmo",
         CA4: " Acesse o jogo online e comece a aprender sobre agrotóxicos de forma interativa e divertida.",
         CA5: "Jogue Agora",
+        IMG01: "img/Agro-Cult-01.png",
+        "IMG02": "img/SR-PT.png",
+        "IMG03": "img/Bonus-PT.png",
         
     
         // Sobre
@@ -907,7 +922,7 @@ i18n.use(initReactI18next).init({
 
         //Header
 
-        PLAYURL:"https://www.flippity.net/bg.php?k=1-7Akba-QSpdjX6O0W7f_FILNqZWlzvueFpiRQziiG9A",
+        PLAYURL:"https://www.flippity.net/v2/bg.php?k=e/2PACX-1vQG3zdpIcwiZCCRnkjM8Tnmo_RkgN0CrpkXt-qp0623Puwo4Ihv4NKsXRo1z-4QBrk-8YdNI6fF2leQ",
 
         navLinks:{
           sobre: {
