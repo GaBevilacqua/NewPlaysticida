@@ -717,7 +717,7 @@ i18n.use(initReactI18next).init({
 
       //Home page
         welcome: "Bem-vindo ao Playsticida!",
-        welcome2: " Descubra o mundo da química de f orma divertida e interativa",
+        welcome2: " Descubra o mundo da química de forma divertida e interativa",
         language: "Selecione seu idioma",
         language2: "Playsticida está disponível em múltiplos idomas",
         question: "O que é o Playsticida",
