@@ -49,11 +49,6 @@ function Footer() {
       href: "mailto:ma.dias@unesp.br",
       icon: <Mail size={16} className="mr-2" />
     },
-    {
-      name: "(18) 3229-5388",
-      href: "tel:+551832295388",
-      icon: <Phone size={16} className="mr-2" />
-    }
   ];
 
   
