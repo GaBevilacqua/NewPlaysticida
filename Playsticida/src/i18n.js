@@ -87,7 +87,7 @@ i18n.use(initReactI18next).init({
 
         "contact": "Contact",
         "FA0": "Faculty of Science and Technology",
-        "FA1": "Chat with Prof. Dr. Maurício Araújo",
+        "FA1": "Chat with Maurício Araújo Dias",
         "HF0": "Opening Hours",
         "HF1": "Monday to Friday:",
         "HF2": "Saturday",
@@ -186,7 +186,7 @@ i18n.use(initReactI18next).init({
         "CA5": "Play Now",
         "CA6": "Credits",
         "CA7": "Meet the team behind the development of Playsticida",
-        "CA8": " Playsticida conceived by Marcelo de Freitas Lima, with contributions from:",
+        "CA8": " Playsticida conceived by Marcela de Freitas Lima, with contributions from:",
         "CA9": "Licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit{' '}",
         "SO0": "Our Purpose",
         "SO1": "Playsticida focuses on the playful environment for teaching, but without losing the technical and scientific aspect.",
@@ -325,7 +325,7 @@ i18n.use(initReactI18next).init({
 
         "contact": "Contacto",
         "FA0": "Facultad de Ciencia y Tecnología",
-        "FA1": "Hablar con el Prof. Dr. Maurício Araújo",
+        "FA1": "Hablar con el Maurício Araújo Dias",
         "HF0": "Horario de Atención",
         "HF1": "Lunes a Viernes:",
         "HF2": "Sábado",
@@ -424,7 +424,7 @@ i18n.use(initReactI18next).init({
         "CA5": "Jugar Ahora",
         "CA6": "Créditos",
         "CA7": "Conoce al equipo detrás del desarrollo de Playsticida",
-        "CA8": " Playsticida ideado por Marcelo de Freitas Lima, con las contribuciones de:",
+        "CA8": " Playsticida ideado por Marcela de Freitas Lima, con las contribuciones de:",
         "CA9": "Licenciado bajo CC BY-NC-SA 4.0. Para ver una copia de esta licencia, visite{' '}",
         "SO0": "Nuestro Propósito",
         "SO1": "Playsticida se enfoca en el medio lúdico para la enseñanza, pero sin perder el aspecto técnico y científico.",
@@ -558,7 +558,7 @@ i18n.use(initReactI18next).init({
 
         "contact": "Contatto",
         "FA0": "Facoltà di Scienze e Tecnologie",
-        "FA1": "Parla con il Prof. Dott. Maurício Araújo",
+        "FA1": "Parla con il Maurício Araújo Dias",
         "HF0": "Orari di Apertura",
         "HF1": "Da Lunedì a Venerdì:",
         "HF2": "Sabato",
@@ -657,7 +657,7 @@ i18n.use(initReactI18next).init({
           "CA5": "Gioca Ora",
           "CA6": "Crediti",
           "CA7": "Scopri il team dietro lo sviluppo di Playsticida",
-          "CA8": " Playsticida ideato da Marcelo de Freitas Lima, con i contributi di:",
+          "CA8": " Playsticida ideato da Marcela de Freitas Lima, con i contributi di:",
           "CA9": "Concesso in licenza CC BY-NC-SA 4.0. Per visualizzare una copia di questa licenza, visitare{' '}",
           "SO0": "Il Nostro Scopo",
           "SO1": "Playsticida si concentra sull'aspetto ludico per l'insegnamento, ma senza perdere l'aspetto tecnico e scientifico.",
@@ -801,7 +801,7 @@ i18n.use(initReactI18next).init({
 
         contact: "Contato",
         FA0: "Faculdade de Ciência e Técnologia",
-        FA1: "Conversar com o Prof. Dout. Maurício Araújo ",
+        FA1: "Conversar com Maurício Araújo Dias",
         HF0: "Horário de Funcionamento",
         HF1: "Segunda a Sexta:",
         HF2: "Sábado",
@@ -814,7 +814,7 @@ i18n.use(initReactI18next).init({
 
         // Regras
 
-        rules: "Regra",
+        rules: "Regras",
         RI0: "Conheça as regras do Playsticida, um jogo educativo sobre agrotóxicos e agricultura sustentável",
         OB0: "O alvo do estudo",
         OB1: "Objetivo do Jogo",
@@ -910,7 +910,7 @@ i18n.use(initReactI18next).init({
 
         CA6: "Créditos",
         CA7: "Conheça a equipe por trás do desenvolvimento do Playsticida",
-        CA8: " Playsticida idealizado por Marcelo de Freitas Lima, com as contribuições de:",
+        CA8: " Playsticida idealizado por Marcela de Freitas Lima, com as contribuições de:",
         CA9: "Licenciada sob CC BY-NC-SA 4.0. Para ver uma cópia desta licença, visite{' '}",
         SO0:"Nosso Intuito",
         SO1:"Playsticida foca no meio lúdico para o ensino, mas sem perder o aspecto tecńico e científico.",
