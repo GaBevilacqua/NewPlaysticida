@@ -109,7 +109,7 @@ function Sobre() {
               <div>José Víctor de Souza</div>
               <div>William de Silva Lopes</div>
               <div>Maurício Araújo Dias</div>
-              <div>Danilo Medeiros Eléc</div>
+              <div>Danilo Medeiros Eler</div>
               <div>Arthur Oliveira Artero</div>
               <div>Daniel Harpayali Monro Vespa</div>
               <div>Raissa Maria Trindade Oliveira</div>
@@ -126,6 +126,7 @@ function Sobre() {
               <div>Priscila Teresira Ananisa</div>
               <div>Sáfita Gomes Esteves</div>
               <div>Stephen de Almeida Abres</div>
+              <div>Talita Serpa</div>
             </div>
             
             <div className="mt-8 text-center">
