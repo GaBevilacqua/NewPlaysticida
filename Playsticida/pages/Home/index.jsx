@@ -1,10 +1,11 @@
+import { useState, useEffect } from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { AlignCenter } from "lucide-react";
+import AlertBox from "../../src/utils/alert.jsx";
 
 function Home() {
   const { t, i18n } = useTranslation();
@@ -23,6 +24,19 @@ function Home() {
     { code: "es", flag: "🇪🇸", name: "Español" },
     { code: "it", flag: "🇮🇹", name: "Italiano" },
   ];
+
+
+    const [showAlert, setShowAlert] = useState(false);;
+  
+      const handleAlert = (e) => {
+      e.preventDefault();
+      setShowAlert(true);
+    };
+  
+  const handleConfirm = () => {
+    setShowAlert(false);
+    window.open(t("PLAYURL"), "_blank", "noopener,noreferrer");
+  };
 
   // Dados dos recursos educacionais COM I18N
 const educationalResources = [
@@ -274,6 +288,8 @@ const testimonials = [
             </p>
             <a
                 href={t("PLAYURL")}
+                onClick={handleAlert}     
+                rel="noopener noreferrer"
                 className="inline-flex items-center bg-white text-green-700 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1"
               >
               <span>{t("JA5")}</span>
@@ -281,6 +297,13 @@ const testimonials = [
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
+            {showAlert && (
+                        <AlertBox
+                          title={t("alertTitle")}
+                          message={t("alertMessage")}
+                          onConfirm={handleConfirm}
+                        />
+                      )}
             
             
           </div>
