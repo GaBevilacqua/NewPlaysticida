@@ -130,15 +130,15 @@ function Regras() {
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start">
                   <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">1</span>
-                  <span>{t("CJ5")}<strong>{t("CJ6")}</strong></span>
+                  <span><strong>{t("CJ5")}</strong>{t("CJ6")}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">2</span>
-                  <span>{t("CJ7")}<strong>{t("CJ8")}</strong> </span>
+                  <span><strong>{t("CJ7")}</strong>{t("CJ8")} </span>
                 </li>
                 <li className="flex items-start">
                   <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">3</span>
-                  <span>{t("CJ9")}<strong>{t("CJ10")}</strong> </span>
+                  <span><strong>{t("CJ9")}</strong>{t("CJ10")} </span>
                 </li>
               </ul>
             </div>
@@ -186,19 +186,19 @@ function Regras() {
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start">
                   <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">A</span>
-                  <span>{t("CJ18")}<strong>{t("CJ19")}</strong> </span>
+                  <span><strong>{t("CJ18")}</strong>{t("CJ19")} </span>
                 </li>
                 <li className="flex items-start">
                   <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">B</span>
-                  <span>{t("CJ20")}<strong>{t("CJ21")}</strong> </span>
+                  <span><strong>{t("CJ20")}</strong>{t("CJ21")} </span>
                 </li>
                 <li className="flex items-start">
                   <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">C</span>
-                  <span>{t("CJ22")}<strong>{t("CJ23")}</strong> </span>
+                  <span><strong>{t("CJ22")}</strong>{t("CJ23")} </span>
                 </li>
                 <li className="flex items-start">
                   <span className="bg-green-100 text-green-800 rounded-full p-1 mr-3 mt-1">D</span>
-                  <span>{t("CJ24")}<strong>{t("CJ25")}</strong> </span>
+                  <span><strong>{t("CJ24")}</strong>{t("CJ25")} </span>
                 </li>
               </ul>
             </div>
@@ -310,7 +310,7 @@ function Regras() {
                   <span><strong>{t("RJ28")}</strong> {t("RJ29")}</span>
                 </li>
                 <li className="flex items-start">
-                  <span>{t("RJ30")}<strong>{t("RJ31")}</strong> </span>
+                  <span><strong>{t("RJ30")}</strong> {t("RJ31")}</span>
                 </li>
               </ul>
             </div>
@@ -357,16 +357,13 @@ function Regras() {
               <h3 className="text-2xl font-bold text-gray-800 mb-4">{t("RJ39")}</h3>
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start">
-                  <span>{t("RJ40")}<strong>{t("RJ42")}</strong> </span>
+                  <span>{t("RJ43")}{t("RJ43")} </span>
                 </li>
                 <li className="flex items-start">
-                  <span>{t("RJ43")}<strong>{t("RJ43")}</strong> </span>
+                  <span><strong>{t("RJ44")}</strong> {t("RJ45")} </span>
                 </li>
                 <li className="flex items-start">
-                  <span>{t("RJ44")}<strong>{t("RJ45")}</strong> </span>
-                </li>
-                <li className="flex items-start">
-                  <span>{t("RJ46")}<strong>{t("RJ47")}</strong> </span>
+                  <span><strong>{t("RJ46")}</strong> {t("RJ47")} </span>
                 </li>
               </ul>
             </div>
