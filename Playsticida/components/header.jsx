@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Menu, X, Download, BookOpen, Mail, Info, Award, PlaneIcon, PlayCircle, BugPlayIcon, Play, Languages } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import AlertBox from "../src/utils/alert.jsx";
+
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -17,6 +19,21 @@ function Header() {
     { code: "it", flag: "🇮🇹", name: "Italiano" },
   ];
 
+  const [showAlert, setShowAlert] = useState(false);;
+
+  const handleAlert = (e) => {
+  e.preventDefault();
+  setShowAlert(true);
+};
+
+const handleConfirm = () => {
+  setShowAlert(false);
+  window.open(t("PLAYURL"), "_blank", "noopener,noreferrer");
+};
+
+
+
+
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -28,9 +45,10 @@ function Header() {
   }, []);
 
   // Fechar menu ao clicar em um link
-  const handleLinkClick = () => {
-    setOpen(false);
-  };
+ const handleLinkClick = (e) => {
+  e.preventDefault();
+  setShowAlert(true);
+};
 
   // Mudar idioma
   const changeLanguage = (lng) => {
@@ -73,7 +91,6 @@ function Header() {
         <Link 
           to="/" 
           className="flex items-center group"
-          onClick={handleLinkClick}
         >
           <img
             src="https://i.ibb.co/7zSwhLj/Playsticida.png"
@@ -161,7 +178,7 @@ function Header() {
           {/* Botão de Jogar com destaque */}
           <a
             href={t("PLAYURL")}
-            target="_blank"
+            onClick={handleAlert}     
             rel="noopener noreferrer"
             className={`ml-4 flex items-center px-5 py-2.5 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
               scrolled
@@ -172,6 +189,13 @@ function Header() {
             <Play size={18} className="mr-2" />
             {t("JA5")}
           </a>
+          {showAlert && (
+            <AlertBox
+              title={t("alertTitle")}
+              message={t("alertMessage")}
+              onConfirm={handleConfirm}
+            />
+          )}
         </nav>
 
         {/* Mobile menu toggle */}
@@ -215,7 +239,7 @@ function Header() {
                 <Link
                   key={index}
                   to={link.to}
-                  onClick={handleLinkClick}
+                  onClick={() => setOpen(false)}
                   className={`flex items-center px-4 py-3 rounded-lg transition-colors duration-200 ${
                     scrolled 
                       ? "text-gray-700 hover:bg-green-50" 
@@ -287,6 +311,14 @@ function Header() {
               <Award size={18} className="mr-2" />
               {t("JA5")}
             </a>
+
+            {showAlert && (
+            <AlertBox
+              title={t("alertTitle")}
+              message={t("alertMessage")}
+              onConfirm={handleConfirm}
+            />
+          )}
           </div>
         </nav>
       </div>

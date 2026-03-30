@@ -5,6 +5,11 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        //Alert
+        alertTitle: "Attention",
+        alertMessage: "Before starting the game, adjust the screen resolution of your device to better visualize the game elements.",
+
+
         welcome: "Welcome to Playsticida!",
         welcome2: "Discover the world of chemistry in a fun and interactive way",
         language: "Select your language",
@@ -101,8 +106,8 @@ i18n.use(initReactI18next).init({
         "RI0": "Learn the rules of Playsticida, an educational game about pesticides and sustainable agriculture",
         "OB0": "Study Target",
         "OB1": "Game Objective",
-        "OB2": "The game's main objective is to make players aware of the benefits and harms of pesticides, encouraging sustainable agriculture.",
-        "OB3": "Players (farmers) compete in teams of up to 8 participants to achieve the highest productivity on their farms, learning about the correct use of pesticides.",
+        "OB2": "The game's main objective is to make people aware of the benefits and harms of pesticides, encouraging sustainable agriculture.",
+        "OB3": "People (farmers) compete in teams of up to 8 participants to achieve the highest productivity on their farms, learning about the correct use of pesticides.",
         "OB4": "Play Now",
         "CJ0": "Game Components",
         "CJ1": "Learn about the elements that make up Playsticida and their functions",
@@ -192,7 +197,7 @@ i18n.use(initReactI18next).init({
         "SO1": "Playsticida focuses on the playful environment for teaching, but without losing the technical and scientific aspect.",
         "SO2": "The purpose is to apply knowledge in practice, but without leaving the classroom, as a teaching complement.",
         "SO3": "Development",
-        "SO4": "Made by students and teachers from diverse backgrounds, to meet the need for virtual and accessible learning.",
+        "SO4": "Made by students and teachers from various courses, to meet the need for access to and acessible virtual learning.",
         "SO5": "If you wish, feel free to read our",
         "IMG01": "img/Agro-Cult-01 (EN).png",
         "IMG02": "img/SR-EN.png",
@@ -242,6 +247,10 @@ i18n.use(initReactI18next).init({
     },
     es: {
       translation: {
+        //Alert
+        alertTitle: "Atención",
+        alertMessage: "Antes de comenzar la partida, ajusta la resolución de pantalla de tu dispositivo para visualizar mejor los elementos del juego.",
+
         welcome: "¡Bienvenido a Playsticida!",
         welcome2: "Descubre el mundo de la química de manera divertida e interactiva",
         language: "Selecciona tu idioma",
@@ -339,8 +348,8 @@ i18n.use(initReactI18next).init({
         "RI0": "Conoce las reglas de Playsticida, un juego educativo sobre pesticidas y agricultura sostenible",
         "OB0": "Objetivo del estudio",
         "OB1": "Objetivo del Juego",
-        "OB2": "El juego tiene como objetivo fundamental concienciar a los jugadores sobre los beneficios y perjuicios de los pesticidas, fomentando una agricultura sostenible.",
-        "OB3": "Los jugadores (agricultores) compiten en equipos de hasta 8 participantes para obtener la mayor productividad en sus granjas, aprendiendo sobre el uso correcto de los pesticidas.",
+        "OB2": "El juego tiene como objetivo fundamental concienciar a las personas sobre los beneficios y perjuicios de los pesticidas, fomentando una agricultura sostenible.",
+        "OB3": "Las personas (agricultores) compiten en equipos de hasta 8 participantes para obtener la mayor productividad en sus granjas, aprendiendo sobre el uso correcto de los pesticidas.",
         "OB4": "Jugar Ahora",
         "CJ0": "Componentes del Juego",
         "CJ1": "Conoce los elementos que componen el juego Playsticida y sus funcionalidades",
@@ -430,8 +439,8 @@ i18n.use(initReactI18next).init({
         "SO1": "Playsticida se enfoca en el medio lúdico para la enseñanza, pero sin perder el aspecto técnico y científico.",
         "SO2": "El propósito es aplicar el conocimiento en la práctica, pero sin salir del aula, como complemento de enseñanza.",
         "SO3": "Desarrollo",
-        "SO4": "Hecho por estudiantes y profesores de los más diversos medios, para atender la necesidad de aprendizaje virtual y accesible.",
-        "SO5": "Si lo desea, quédese con la libertad de leer nuestro",
+        "SO4": "Hecho por estudiantes y profesores de los más diversos cursos, para atender la necesidad de acesso a un aprendizaje virtual accesible.",
+        "SO5": "Si lo desea, quédate libre de leer nuestro",
         "IMG01": "img/Agro-Cult-01-ES.png",
         "IMG02": "img/SR-ES.png",
          "IMG03": "img/Bonus-ES.png",
@@ -465,7 +474,7 @@ i18n.use(initReactI18next).init({
         }
       },
 
-      FRASE: "Transformando el aprendizaje de la química en una experiencia divertida y atractiva para todos.",
+      FRASE: "Transformando el aprendizaje de la química en una experiencia divertida y atractiva para todas las personas.",
       CONT: "Contacto",
       NAV: "Navegación",
       DIR: "Playsticida. Todos los derechos reservados.",
@@ -476,6 +485,10 @@ i18n.use(initReactI18next).init({
     },
     it: {
       translation: {
+        //Alert
+        alertTitle: "Attenzione",
+        alertMessage: "Prima di iniziare la partita, regola la risoluzione dello schermo del tuo dispositivo per visualizzare meglio gli elementi del gioco.",
+
         welcome: "Benvenuto su Playsticida!",
         welcome2: "Scopri il mondo della chimica in modo divertente e interattivo",
         language: "Seleziona la tua lingua",
@@ -572,8 +585,8 @@ i18n.use(initReactI18next).init({
           "RI0": "Scopri le regole di Playsticida, un gioco educativo sui pesticidi e l'agricoltura sostenibile",
           "OB0": "Obiettivo dello studio",
           "OB1": "Obiettivo del Gioco",
-          "OB2": "L'obiettivo fondamentale del gioco è sensibilizzare i giocatori sui benefici e i danni dei pesticidi, incoraggiando un'agricoltura sostenibile.",
-          "OB3": "I giocatori (agricoltori) competono in squadre fino a 8 partecipanti per ottenere la massima produttività nelle loro fattorie, apprendendo l'uso corretto dei pesticidi.",
+          "OB2": "L'obiettivo fondamentale del gioco è sensibilizzare le persone sui benefici e i danni dei pesticidi, incoraggiando un'agricoltura sostenibile.",
+          "OB3": "Le persone (agricoltori) competono in squadre fino a 8 partecipanti per ottenere la massima produttività nelle loro fattorie, apprendendo l'uso corretto dei pesticidi.",
           "OB4": "Gioca Ora",
           "CJ0": "Componenti del Gioco",
           "CJ1": "Scopri gli elementi che compongono Playsticida e le loro funzionalità",
@@ -663,8 +676,8 @@ i18n.use(initReactI18next).init({
           "SO1": "Playsticida si concentra sull'aspetto ludico per l'insegnamento, ma senza perdere l'aspetto tecnico e scientifico.",
           "SO2": "Lo scopo è applicare la conoscenza nella pratica, ma senza uscire dall'aula, come complemento didattico.",
           "SO3": "Sviluppo",
-          "SO4": "Realizzato da studenti e insegnanti dei più diversi ambiti, per soddisfare l'esigenza di apprendimento virtuale e accessibile.",
-          "SO5": "Se lo desideri, sentiti libero di leggere il nostro",
+          "SO4": "Realizzato da studenti e insegnanti dei più diversi corsi, per soddisfare la necessità di accesso a un apprendimento virtuale e accessibile.",
+          "SO5": "Senza ulteriori indugi, sentiti libero di leggere il nostro",
           "IMG01": "img/Agro-Cult-01-IT.png",
           "IMG02": "img/SR-IT.png",
            "IMG03": "img/Bonus-IT.png",
@@ -698,7 +711,7 @@ i18n.use(initReactI18next).init({
         }
       },
 
-      FRASE: "Trasformare l'apprendimento della chimica in un'esperienza divertente e coinvolgente per tutti.",
+      FRASE: "Trasformare l'apprendimento della chimica in un'esperienza divertente e coinvolgente per tutti le persone.",
       CONT: "Contatto",
       NAV: "Navigazione",
       DIR: "Playsticida. Tutti i diritti riservati.",
@@ -714,6 +727,10 @@ i18n.use(initReactI18next).init({
 
     pt: {
       translation: {
+
+      //Alert
+      alertTitle: "Atenção",
+      alertMessage: "Antes de iniciar a partida, ajuste a resolução da tela do seu equipamento para melhor visualizar os elementos do jogo.",
 
       //Home page
         welcome: "Bem-vindo ao Playsticida!",
@@ -818,8 +835,8 @@ i18n.use(initReactI18next).init({
         RI0: "Conheça as regras do Playsticida, um jogo educativo sobre agrotóxicos e agricultura sustentável",
         OB0: "O alvo do estudo",
         OB1: "Objetivo do Jogo",
-        OB2: "O jogo tem como objetivo fundamental conscientizar os jogadores sobre os benefícios e malefícios  dos agrotóxicos, incentivando uma agricultura sustentável.",
-        OB3: "Os jogadores (fazendeiros) competem em equipes de até 8 participantes para obter a maior produtividade em suas fazendas, aprendendo sobre o uso correto dos agrotóxicos.",
+        OB2: "O jogo tem como objetivo fundamental conscientizar as pessoas sobre os benefícios e malefícios  dos agrotóxicos, incentivando uma agricultura sustentável.",
+        OB3: "As pessoas (fazendeiros) competem em equipes de até 8 participantes para obter a maior produtividade em suas fazendas, aprendendo sobre o uso correto dos agrotóxicos.",
         OB4: "Jogar Agora",
         CJ0: "Componentes do Jogo",
         CJ1: "Conheça os elementos que compõem o jogo Playsticida e suas funcionalidades",
@@ -835,7 +852,7 @@ i18n.use(initReactI18next).init({
         CJ11: "Tabuleiro",
         CJ12: "Estrutura do Tabuleiro",
         CJ13: "O tabuleiro representa diversas atividades que usam agrotóxicos (culturas agrícolas, pecuária, etc.). Inclui casas de sorte/revés com consequências como:",
-        CJ14: "O excesso de agrotóxicos utilizados provocou a contaminação do córrego próximo a sua propriedade, retroceda 10 casas.",
+        CJ14: "O excesso de agrotóxicos utilizados provocou a contaminação do córrego próximo à sua propriedade, retroceda 10 casas.",
         CJ15: "Cartas",
         CJ16: "Quatro tipos diferentes",
         CJ17: "Tipos de Cartas",
@@ -916,8 +933,8 @@ i18n.use(initReactI18next).init({
         SO1:"Playsticida foca no meio lúdico para o ensino, mas sem perder o aspecto tecńico e científico.",
         SO2:"O intuito é aplicar o conhecimento no meio prático, mas sem sair da saula de aula, como complemento de ensino.",
         SO3:"Desenvolvimento",
-        SO4:"Feito por alunos e professores pdos mais diversos meios, para atender a necessidade de aprendizado virtual e acessível.",
-        SO5:"Caso quiser fique avontade de ler nosso",
+        SO4:"Feito por alunos e professores de diversos cursos, para atender a necessidade de acesso e aprendizado virtual e acessível.",
+        SO5:"Fique à vontade para ler o nosso",
 
 
         //Header
@@ -951,7 +968,7 @@ i18n.use(initReactI18next).init({
           }
         },
 
-        FRASE:"Transformando o aprendizado de química em uma experiência divertida e envolvente para todos.",
+        FRASE:"Transformando o aprendizado de química em uma experiência divertida e envolvente para todas as pessoas.",
         CONT:"Contato",
         NAV:"Navegação",
         DIR:"Playsticida. Todos os direitos reservados.",

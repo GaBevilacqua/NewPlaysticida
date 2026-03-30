@@ -1,13 +1,26 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { AlignCenter } from "lucide-react";
+import AlertBox from "../../src/utils/alert.jsx";
+import { useState, useEffect } from "react";
 
 function Regras() {
   const { t } = useTranslation();
+
+   const [showAlert, setShowAlert] = useState(false);;
+  
+      const handleAlert = (e) => {
+      e.preventDefault();
+      setShowAlert(true);
+    };
+  
+  const handleConfirm = () => {
+    setShowAlert(false);
+    window.open(t("PLAYURL"), "_blank", "noopener,noreferrer");
+  };
   
 
   // Dados dos idiomas disponíveis
@@ -69,6 +82,8 @@ function Regras() {
               </p>
               <a
                 href= {t("PLAYURL")}
+                onClick={handleAlert}     
+                rel="noopener noreferrer"
                 className="inline-flex items-center bg-green-600 text-white font-semibold px-6 py-4 rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300 transform hover:-translate-y-1"
               >
                 <span>{t("OB4")}</span>
@@ -76,6 +91,13 @@ function Regras() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                 </svg>
               </a>
+              {showAlert && (
+                                      <AlertBox
+                                        title={t("alertTitle")}
+                                        message={t("alertMessage")}
+                                        onConfirm={handleConfirm}
+                                      />
+                                    )}
             </div>
           </div>
         </div>
@@ -381,6 +403,8 @@ function Regras() {
               </p>
               <a
                 href={t("PLAYURL")}
+                onClick={handleAlert} 
+                rel="noopener noreferrer" 
                 className="inline-flex items-center bg-white text-green-700 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1"
               >
                 <span>{t("CA5")}</span>
@@ -388,6 +412,13 @@ function Regras() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                 </svg>
               </a>
+              {showAlert && (
+                                      <AlertBox
+                                        title={t("alertTitle")}
+                                        message={t("alertMessage")}
+                                        onConfirm={handleConfirm}
+                                      />
+                                    )}
             </div>
           </div>
         </div>
