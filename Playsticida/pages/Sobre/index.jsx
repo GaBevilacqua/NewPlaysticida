@@ -105,27 +105,27 @@ function Sobre() {
             </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-600">
-              <div>Paula Taracas Pinto</div>
+              <div>Paula Tavares Pinto</div>
               <div>José Víctor de Souza</div>
-              <div>William de Silva Lopes</div>
+              <div>William da Silva Lopes</div>
               <div>Maurício Araújo Dias</div>
               <div>Danilo Medeiros Eler</div>
-              <div>Arthur Oliveira Artero</div>
-              <div>Daniel Harpayali Monro Vespa</div>
+              <div>Almir Olivette Artero</div>
+              <div>Daniel Haruyuki Momo Vespa</div>
               <div>Raissa Maria Trindade Oliveira</div>
-              <div>Anni Emily Vieira</div>
-              <div>André Miguel Martínez Junito</div>
-              <div>Blanca Frunkana de Godel Passerino</div>
-              <div>Daniel Peñero Jacinto da Silva</div>
-              <div>Daniley Reis Santos</div>
-              <div>Evelyn Regina Marcelino de Silva (Quem escolheu o nome)</div>
-              <div>Fabiana Benedetti</div>
-              <div>Gratelly Caroline Teodoro</div>
+              <div>Abni Emily Vieira</div>
+              <div>André Miguel Martínez Junior</div>
+              <div>Bianca Furukawa de Godoi Passerine</div>
+              <div>Daniel Felipe Jacinto da Silva</div>
+              <div>Daniely Reis Santos</div>
+              <div>Evelyn Regina Marcolino de Silva (Quem escolheu o nome)</div>
+              <div>Fabiana Beneduzzi</div>
+              <div>Grazielly Caroline Teodoro</div>
               <div>Ligia Maria Landi</div>
-              <div>Pauline Richeli Bernardi</div>
-              <div>Priscila Teresira Ananisa</div>
-              <div>Sáfita Gomes Esteves</div>
-              <div>Stephen de Almeida Abres</div>
+              <div>Pauline Richeti Bernardi</div>
+              <div>Priscila Teixeira Ananias</div>
+              <div>Safira Gomes Esteves</div>
+              <div>Stephane de Almeida Alves</div>
               <div>Talita Serpa</div>
             </div>
             
