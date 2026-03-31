@@ -817,7 +817,7 @@ i18n.use(initReactI18next).init({
         // Contato
 
         contact: "Contato",
-        FA0: "Faculdade de Ciência e Tecnologia",
+        FA0: "Faculdade de Ciências e Tecnologia",
         FA1: "Conversar com Maurício Araújo Dias",
         HF0: "Horário de Funcionamento",
         HF1: "Segunda a Sexta:",
