@@ -86,6 +86,27 @@ function Sobre() {
         </div>
       </section>
 
+
+      <section className="py-16 bg-white" data-aos="fade-up">
+        <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-1 gap-10 items-center">
+          <div>
+            <h2 className="text-center text-3xl font-bold text-gray-800 mb-4">{t("PUB")}</h2>
+            <p className="text-gray-600 mb-4">
+              PINTO, P. T.; LIMA, M. F. A tradução na área de química orgânica: da adaptação à tradução literal. <b>Estudos Linguísticos (São Paulo. 1978)</b>, v. 47, n. 2, p. 573–585, 17 out. 2018.  DOI: <a href="https://doi.org/10.21165/el.v47i2.2050" target="_blank"  style={{ color: 'blue' }} rel="noopener noreferrer">https://doi.org/10.21165/el.v47i2.2050</a>
+            </p>
+            <p className="text-gray-600 mb-6">
+              ROCHA, C. F.; LIMA, M. F.; SERPA, T. Uma terminologia bilÍngue para a química de compostos organofosforados: um estudo baseado no uso de corpora na composição de glossários de linguagem de especialidade em realidade aumentada. In: FELIZARDO, A. B.; SILVA, E. B.; FIGUEIRA-BORGES, G. (Orgs.). <b>Linguagem e Ensino em Percursos Interculturais</b>, 1. ed., Campinas: Pontes Editores, 2020.
+            </p>
+            <p className="text-gray-600 mb-6">
+              SOUZA, J. V.; PINTO, P. T.; LIMA, M. F. Malationa, malation ou malatiom? A variação denominativa no processo de criação de um glossário bilíngue da área de química de pesticidas. <b>Acta Scientiarum. Language and Culture</b>, v. 44, 2022, <a href="https://doi.org/10.4025/actascilangcult.v44i1.55894" style={{color: 'blue'}} target="_blank" rel="noopener noreferrer">https://doi.org/10.4025/actascilangcult.v44i1.55894</a>.
+            </p>
+            <p className="text-gray-600 mb-6">
+              SOUZA, J. V. A questão terminológica dos organofosforados na química de pesticidas: uma abordagem baseada em corpus. <b>Estudos Linguísticos (São Paulo. 1978)</b>, v. 48, n. 3, p. 1620–1638, 18 dez. 2019. DOI: <a href="https://doi.org/10.21165/el.v48i3.2270" style={{color: 'blue'}} target="_blank" rel="noopener noreferrer">https://doi.org/10.21165/el.v48i3.2270</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Créditos */}
       <section className="py-16 bg-gray-100" data-aos="flip-up">
         <div className="max-w-6xl mx-auto px-4">

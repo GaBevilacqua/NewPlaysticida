@@ -191,7 +191,7 @@ i18n.use(initReactI18next).init({
         "CA5": "Play Now",
         "CA6": "Credits",
         "CA7": "Meet the team behind the development of Playsticida",
-        "CA8": " Playsticida conceived by Marcela de Freitas Lima, with contributions from:",
+        "CA8": " Playsticida conceived by Marcela Marques de Freitas Lima, with contributions from:",
         "CA9": "Licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit{' '}",
         "SO0": "Our Purpose",
         "SO1": "Playsticida focuses on the playful environment for teaching, but without losing the technical and scientific aspect.",
@@ -202,6 +202,7 @@ i18n.use(initReactI18next).init({
         "IMG01": "img/Agro-Cult-01 (EN).png",
         "IMG02": "img/SR-EN.png",
         "IMG03": "img/Bonus-EN.png",
+        "PUB": "Publications",
  
 
 
@@ -433,7 +434,7 @@ i18n.use(initReactI18next).init({
         "CA5": "Jugar Ahora",
         "CA6": "Créditos",
         "CA7": "Conoce al equipo detrás del desarrollo de Playsticida",
-        "CA8": " Playsticida ideado por Marcela de Freitas Lima, con las contribuciones de:",
+        "CA8": " Playsticida ideado por Marcela Marques de Freitas Lima, con las contribuciones de:",
         "CA9": "Licenciado bajo CC BY-NC-SA 4.0. Para ver una copia de esta licencia, visite{' '}",
         "SO0": "Nuestro Propósito",
         "SO1": "Playsticida se enfoca en el medio lúdico para la enseñanza, pero sin perder el aspecto técnico y científico.",
@@ -444,6 +445,7 @@ i18n.use(initReactI18next).init({
         "IMG01": "img/Agro-Cult-01-ES.png",
         "IMG02": "img/SR-ES.png",
          "IMG03": "img/Bonus-ES.png",
+         "PUB": "Publicaciones",
 
         //Header
         navLinks:{
@@ -670,7 +672,7 @@ i18n.use(initReactI18next).init({
           "CA5": "Gioca Ora",
           "CA6": "Crediti",
           "CA7": "Scopri il team dietro lo sviluppo di Playsticida",
-          "CA8": " Playsticida ideato da Marcela de Freitas Lima, con i contributi di:",
+          "CA8": " Playsticida ideato da Marcela Marques de Freitas Lima, con i contributi di:",
           "CA9": "Concesso in licenza CC BY-NC-SA 4.0. Per visualizzare una copia di questa licenza, visitare{' '}",
           "SO0": "Il Nostro Scopo",
           "SO1": "Playsticida si concentra sull'aspetto ludico per l'insegnamento, ma senza perdere l'aspetto tecnico e scientifico.",
@@ -681,6 +683,7 @@ i18n.use(initReactI18next).init({
           "IMG01": "img/Agro-Cult-01-IT.png",
           "IMG02": "img/SR-IT.png",
            "IMG03": "img/Bonus-IT.png",
+           "PUB": "Pubblicazioni",
 
           //Header
           navLinks:{
@@ -927,7 +930,7 @@ i18n.use(initReactI18next).init({
 
         CA6: "Créditos",
         CA7: "Conheça a equipe por trás do desenvolvimento do Playsticida",
-        CA8: " Playsticida idealizado por Marcela de Freitas Lima, com as contribuições de:",
+        CA8: " Playsticida idealizado por Marcela Marques de Freitas Lima, com as contribuições de:",
         CA9: "Licenciada sob CC BY-NC-SA 4.0. Para ver uma cópia desta licença, visite{' '}",
         SO0:"Nosso Intuito",
         SO1:"Playsticida foca no meio lúdico para o ensino, mas sem perder o aspecto tecńico e científico.",
@@ -935,6 +938,7 @@ i18n.use(initReactI18next).init({
         SO3:"Desenvolvimento",
         SO4:"Feito por alunos e professores de diversos cursos, para atender a necessidade de acesso e aprendizado virtual e acessível.",
         SO5:"Fique à vontade para ler o nosso",
+        PUB: "Publicações",
 
 
         //Header
