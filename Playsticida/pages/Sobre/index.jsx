@@ -107,6 +107,18 @@ function Sobre() {
         </div>
       </section>
 
+      <section className="py-16 bg-white" data-aos="fade-up">
+        <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-1 gap-10 items-center">
+          <div>
+            <h2 className="text-center text-3xl font-bold text-gray-800 mb-4">{t("MINFO")}</h2>
+            <p className="text-gray-600 mb-4">
+             {t("MINFO_DESC")}<a href="https://www.ibilce.unesp.br/#!/departamentos/letras-modernas/projetos/evolve-en/" target="_blank"  style={{ color: 'blue' }} rel="noopener noreferrer"> https://www.ibilce.unesp.br/#!/departamentos/letras-modernas/projetos/evolve-en/</a>
+            </p>
+           
+          </div>
+        </div>
+      </section>
+
       {/* Créditos */}
       <section className="py-16 bg-gray-100" data-aos="flip-up">
         <div className="max-w-6xl mx-auto px-4">
