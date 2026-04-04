@@ -203,6 +203,8 @@ i18n.use(initReactI18next).init({
         "IMG02": "img/SR-EN.png",
         "IMG03": "img/Bonus-EN.png",
         "PUB": "Publications",
+        "MINFO": "More Information",
+        "MINFO_DESC": "For more information about the project, visit our page on the EVOLVE UNESP website: ",
  
 
 
@@ -446,6 +448,8 @@ i18n.use(initReactI18next).init({
         "IMG02": "img/SR-ES.png",
          "IMG03": "img/Bonus-ES.png",
          "PUB": "Publicaciones",
+         "MINFO": "Más Información",
+          "MINFO_DESC": "Para más información sobre el proyecto, visita nuestra página en el sitio web de EVOLVE UNESP: ",
 
         //Header
         navLinks:{
@@ -684,6 +688,8 @@ i18n.use(initReactI18next).init({
           "IMG02": "img/SR-IT.png",
            "IMG03": "img/Bonus-IT.png",
            "PUB": "Pubblicazioni",
+           "MINFO": "Più Informazioni",
+            "MINFO_DESC": "Per maggiori informazioni sul progetto, visita la nostra pagina sul sito web di EVOLVE UNESP: ",
 
           //Header
           navLinks:{
@@ -939,6 +945,8 @@ i18n.use(initReactI18next).init({
         SO4:"Feito por alunos e professores de diversos cursos, para atender a necessidade de acesso e aprendizado virtual e acessível.",
         SO5:"Fique à vontade para ler o nosso",
         PUB: "Publicações",
+        MINFO: "Mais Informações",
+        MINFO_DESC: "Para mais informações sobre o projeto, visite nossa página no site na EVOLVE UNESP: ",
 
 
         //Header
