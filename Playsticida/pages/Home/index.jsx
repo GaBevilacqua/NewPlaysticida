@@ -91,7 +91,7 @@ const testimonials = [
     { value: "Copyright", label: t("stats.copyright") },
     { value: "Unesp", label: t("stats.university") },
     { value: "2017", label: t("stats.releaseYear") },
-    { value: "2025", label: t("stats.lastUpdate") }
+    { value: "2026", label: t("stats.lastUpdate") }
   ];
 
   return (
