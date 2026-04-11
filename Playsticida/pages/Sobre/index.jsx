@@ -160,6 +160,7 @@ function Sobre() {
               <div>Safira Gomes Esteves</div>
               <div>Stephane de Almeida Alves</div>
               <div>Talita Serpa</div>
+              <div>Gabriel Bevilacqua Barros</div>
             </div>
             
             <div className="mt-8 text-center">
